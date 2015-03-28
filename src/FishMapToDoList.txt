@@ -18,7 +18,6 @@ add API calls - wikipedia articles
 Does the trib have an API?
 Maybe the Herald?
 Store info locally
-add county info
 add lat/lon
 https://github.com/jimrhoskins/knockout.localStorage
 
@@ -31,6 +30,7 @@ incorporate Bower
 integrate knockout
 hook up lake list
 set up git repo and get the POC committed
+add county info
 
 
 Development log:

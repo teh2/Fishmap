@@ -37,7 +37,7 @@ var LakeScraper = function(theLakes) {
 	};
 	this.initSpeciesLists = function() {
 		for (var lakeIndex in scraper.lakes()) {
-if (10 < lakeIndex) return;
+//if (10 < lakeIndex) return;
 			var aLake = scraper.lakes()[lakeIndex];
 			var aUrl = "http://www.ifishillinois.org" + aLake.href();
 			$.ajax({
@@ -46,6 +46,7 @@ if (10 < lakeIndex) return;
 				dataType: "text",
 				context: aLake,
 				success: scraper.scrapeSpecies,
+				complete: scraper.scrapeSpeciesFinished,
 				error: function(xhr, stat, thrown) {
 					console.log(stat+":"+thrown);
 				}
@@ -82,6 +83,14 @@ console.log("scraping species for " + this.name());
 				console.log("Number of species found:" + thisLake.species().length);
 				console.log("species: " + thisLake.species());
 			}
+		}
+	};
+	this.scrapeSpeciesFinished = function(xhr, status) {
+		scraper.speciesScrapedCounter = scraper.speciesScrapedCounter + 1;
+console.log("Number of lakes' species scraped: " + scraper.speciesScrapedCounter);
+		if (scraper.lakes().length === scraper.speciesScrapedCounter) {
+			console.log("All done scraping species");
+			scraper.statusText.text("Done scraping");
 		}
 	};
 };
