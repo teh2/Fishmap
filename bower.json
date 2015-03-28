@@ -1,0 +1,26 @@
+{
+  "name": "fishmap",
+  "version": "0.0.0",
+  "authors": [
+    "Tom <thillii@yahoo.com>"
+  ],
+  "description": "Illinois Fishing Map",
+  "main": "index.html",
+  "keywords": [
+    "fish"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4",
+    "jquery": "~2.1.3",
+    "knockout": "~3.3.0"
+  }
+}

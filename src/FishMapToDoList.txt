@@ -1,0 +1,31 @@
+Current:
+--------
+set up git repo and get the POC committed
+Learn more about Bower - how to keep components up to date
+Learn more about Bower - how to use src/dev/dist
+Set up the map
+Add pins to the map
+search function - real time, by name
+filter function - pick one or more species
+filter function - other criteria?
+gulp - build script
+integrate bootstrap
+style up the page
+make it responsive
+test it in a phone browser
+add API calls - fishing reports
+add API calls - pics
+add API calls - wikipedia articles
+Does the trib have an API?
+Maybe the Herald?
+Store info locally
+add county info
+add lat/lon
+
+Finished:
+---------
+LakeScraper proof of concept
+basic html page
+incorporate Bower
+integrate knockout
+hook up lake list
