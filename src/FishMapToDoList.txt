@@ -1,6 +1,5 @@
 Current:
 --------
-set up git repo and get the POC committed
 Learn more about Bower - how to keep components up to date
 Learn more about Bower - how to use src/dev/dist
 Set up the map
@@ -21,6 +20,8 @@ Maybe the Herald?
 Store info locally
 add county info
 add lat/lon
+https://github.com/jimrhoskins/knockout.localStorage
+
 
 Finished:
 ---------
@@ -29,3 +30,17 @@ basic html page
 incorporate Bower
 integrate knockout
 hook up lake list
+set up git repo and get the POC committed
+
+
+Development log:
+----------------
+Set up initial project directories
+Initial Bower configuration
+Need to learn a bit more about how Bower works. Not completely clear, yet.
+LakeScraper POC
+Grabbing lake names, individual pages, and species lists.
+Unfortunately, can't get a good address, or lat/lon to pinpoint them on the map.
+Also, unfortunately, not all lakes listed have species lists.
+Found another list at: http://itouchmap.com/?f=lake&s=IL which lists 860 lakes in Il. But doesn't give fishing info...
+Fought with ko.computed() for a while... It's touchy... If you update your observableArray without using a ko function (IE: myOA()[myOA().length] = blah) then you won't get the dependencies to trigger. But if you use the ko ".push" instead, it works (IE: myOA.push(blah)).

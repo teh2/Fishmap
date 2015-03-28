@@ -15,7 +15,7 @@
 	<h2>Lakes:</h2>
 	<div class="listView">
 		<ul data-bind="foreach: lakes">
-			<li data-bind="text: name, click: $parent.setCurrentLake"></li>
+			<li data-bind="text: displayName, click: $parent.setCurrentLake"></li>
 		</ul>
 	</div>
 	<div class="mapView">

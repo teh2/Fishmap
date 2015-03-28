@@ -39,7 +39,7 @@ var LakeScraper = function(theLakes) {
 		for (var lakeIndex in scraper.lakes()) {
 if (10 < lakeIndex) return;
 			var aLake = scraper.lakes()[lakeIndex];
-			var aUrl = "http://www.ifishillinois.org" + aLake.href;
+			var aUrl = "http://www.ifishillinois.org" + aLake.href();
 			$.ajax({
 				url: aUrl,
 				type: "get",
@@ -53,9 +53,9 @@ if (10 < lakeIndex) return;
 		};
 	};
 	this.scrapeSpecies = function(data, status, xhr) {
-console.log("scraping species for " + this.name);
+console.log("scraping species for " + this.name());
 		var thisLake = this;
-			scraper.statusText.text("scraping: " + thisLake.name);
+			scraper.statusText.text("scraping: " + thisLake.name());
 		var resp = data.responseText;
 		var beginLoc = resp.search('<div id="species">');
 		if (-1 < beginLoc) {
@@ -65,10 +65,10 @@ console.log("scraping species for " + this.name);
 				var resp3 = resp2.substr(0, endLoc);
 				$(resp3).find('td a').each(function() {
 					var aSpecies = $(this).text().trim();
-					thisLake.species[thisLake.species.length] = aSpecies;
+					thisLake.species.push(aSpecies);
 				});
-				console.log("Number of species found:" + thisLake.species.length);
-				console.log("species: " + thisLake.species);
+				console.log("Number of species found:" + thisLake.species().length);
+				console.log("species: " + thisLake.species());
 			}
 		}
 	};

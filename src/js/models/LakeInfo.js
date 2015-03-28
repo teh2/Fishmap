@@ -1,5 +1,12 @@
 var LakeInfo = function(nm, ref) {
-	this.name = nm;
-	this.href = ref;
-	this.species = [];
+	var self = this;
+	this.name = ko.observable(nm);
+	this.href = ko.observable(ref);
+	this.species = ko.observableArray();
+	this.speciesCount = ko.computed(function() {
+		return self.species().length;
+	});
+	this.displayName = ko.computed(function() {
+		return self.name() + "(" + self.speciesCount() + ")";
+	});
 }
