@@ -55,8 +55,20 @@ if (10 < lakeIndex) return;
 	this.scrapeSpecies = function(data, status, xhr) {
 console.log("scraping species for " + this.name());
 		var thisLake = this;
-			scraper.statusText.text("scraping: " + thisLake.name());
+	scraper.statusText.text("scraping: " + thisLake.name());
 		var resp = data.responseText;
+		var srchStr = '<strong>County: </strong>';
+		var countyLoc = resp.search(srchStr);
+		if (-1 < countyLoc) {
+			countyLoc = countyLoc + srchStr.length;
+			resp = resp.substr(countyLoc);
+			var countyEnd = resp.search('</p>');
+			if (-1 < countyEnd) {
+				var theCounty = resp.substr(0, countyEnd).trim();
+				thisLake.county(theCounty);
+				resp = resp.substr(countyEnd);
+			}
+		};
 		var beginLoc = resp.search('<div id="species">');
 		if (-1 < beginLoc) {
 			var resp2 = resp.substr(beginLoc);
