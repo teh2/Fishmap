@@ -2,10 +2,9 @@ Current:
 --------
 Learn more about Bower - how to keep components up to date
 Learn more about Bower - how to use src/dev/dist
-Set up the map
-Add pins to the map
 search function - real time, by name
 filter function - pick one or more species
+filter function - area - nw, ne, ec, wc, s
 filter function - other criteria?
 gulp - build script
 integrate bootstrap
@@ -13,14 +12,16 @@ style up the page
 make it responsive
 test it in a phone browser
 add API calls - fishing reports
-add API calls - pics
+add API calls - pics, pintrest, flickr, ???
 add API calls - wikipedia articles
 Does the trib have an API?
 Maybe the Herald?
-Store info locally
 add lat/lon
-https://github.com/jimrhoskins/knockout.localStorage
-
+local storage
+	http://stackoverflow.com/questions/11601365/how-can-i-implement-mvvm-with-offline-storage-and-knockout-js
+	https://github.com/jimrhoskins/knockout.localStorage
+In the infoWindow, make each species name a link to the wikipedia article on that species. Or to a corresponding page at iFishIllinois.
+something else
 
 Finished:
 ---------
@@ -31,7 +32,10 @@ integrate knockout
 hook up lake list
 set up git repo and get the POC committed
 add county info
-
+Store info locally
+Set up the map
+Add pins to the map
+change pin to a fish symbol
 
 Development log:
 ----------------
@@ -44,3 +48,4 @@ Unfortunately, can't get a good address, or lat/lon to pinpoint them on the map.
 Also, unfortunately, not all lakes listed have species lists.
 Found another list at: http://itouchmap.com/?f=lake&s=IL which lists 860 lakes in Il. But doesn't give fishing info...
 Fought with ko.computed() for a while... It's touchy... If you update your observableArray without using a ko function (IE: myOA()[myOA().length] = blah) then you won't get the dependencies to trigger. But if you use the ko ".push" instead, it works (IE: myOA.push(blah)).
+rewrote it to load from a locally sourced JSON object rather than the scraper. This will make it possible to splice in latlon values, and pin the lakes up on the map.

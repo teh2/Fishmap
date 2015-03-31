@@ -1,0 +1,72 @@
+/*
+* {
+	border: 1px;
+	border-style: solid;
+	border-color: red;
+}
+*/
+.mapView {
+	width: 100vw;
+	height: calc(100vh - 130px);
+	display: block;
+}
+
+.lakes-scrollable {
+	overflow-y: scroll;
+	max-height: calc(100vh - 110px);
+}
+
+.fishmap-header {
+  padding-bottom: 5px;
+  margin: 5px 0 2px;
+  border-bottom: 2px solid #eee;
+}
+
+html, body {
+  height: 100%;
+}
+/*
+body {
+  padding: 50px 0 0 0;
+}
+*/
+.navmenu {
+  padding-top: 50px;
+}
+
+.navbar {
+  display: block;
+  text-align: center;
+}
+.navbar-brand {
+  display: inline-block;
+  float: none;
+}
+.navbar-toggle {
+  position: absolute;
+  float: left;
+  margin-left: 15px;
+}
+
+.container {
+  max-width: 100%;
+  max-height: 100vh;
+}
+
+@media (min-width: 1px) {
+  .navbar-toggle {
+    display: block !important;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    padding: 0 0 0 300px;
+  }
+  .navmenu {
+    padding-top: 0;
+  }
+  .navbar {
+    display: none !important; /* IE8 fix */
+  }
+}

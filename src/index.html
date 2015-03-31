@@ -2,37 +2,79 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <meta name="description" content="">
+
     <title>FishMap</title>
 
+	<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/offcanvas.css">
   </head>
   <body>
-    <div class="searchBar">
-		<h2>searchBar goes here</h2>
+	<div class="container">
+	<div class="row">
+    <header class="fishmap-header"> <!-- navbar navbar-default navbar-fixed-top hidden-md hidden-lg -->
+      <button type="button" class="col-xs-2 btn-group hidden-sm hidden-md hidden-lg " data-toggle="offcanvas"> <!--   data-target=".navmenu" -->
+		Lakes
+      </button>
+      <h1 class="col-sx-10 text-center">FishMap</h1>
+    </header>
 	</div>
-	<h2>Lakes:</h2>
-	<div class="listView">
-		<ul data-bind="foreach: lakes">
-			<li data-bind="text: displayName, click: $parent.setCurrentLake"></li>
-		</ul>
-	</div>
-	<div class="mapView">
-		<h2>Map View goes here</h2>
-	</div>
-	<div class="detailsView" data-bind="with: currentLake">
-		<h2>Details view goes here</h2>
-		<p>Name:<span data-bind="text: name"></span>
-		<p>Href:<span data-bind="text: href"></span>
-		<p>County:<span data-bind="text: county"></span>
-		<p>Species:<ul data-bind="foreach: species">
-			<li data-bind="text: $data"></li>
-		</ul>
-	</div>
-	<div class="statusBar"><h2 id="statusText">Status Bar goes here</h2></div>
 
-	<button>Dump</button>
+  <div class="row row-offcanvas row-offcanvas-left">
+    <div class="col-xs-6 col-sm-3 sidebar-offcanvas">
+      <!--a class="navmenu-brand visible-md visible-lg" href="#">FishMap</a-->
+	  <!--div class="list-group">
+		<a href="#" class="list-group-item">one</a>
+		<a href="#" class="list-group-item">two</a>
+		</div-->
+      <!--ul class="listView">
+		<li>One</li>
+		<li>Two</li>
+      </ul-->
+      <ul class="nav navmenu-nav lakes-scrollable listView" data-bind="foreach: lakes">
+		<li data-bind="text: displayName, click: $parent.setCurrentLake"></li>
+      </ul>
+    </div>
+	<div class="col-xs-12 col-sm-9">
+		<div class="searchBar">
+			Search
+		</div>
+		<div class="mapView"> <!--  style="width: 500px; height: 500px; display: block" -->
+			Map
+		</div>
+		<div class="statusBar">
+			<h2 id="statusText">Status Bar goes here</h2>
+		</div>
+		<!--div class="detailsView" data-bind="with: currentLake">
+			<h2>Details view goes here</h2>
+			<p>Name:<span data-bind="text: name"></span>
+			<p>Href:<span data-bind="text: href"></span>
+			<p>County:<span data-bind="text: county"></span>
+			<p>Place:<span data-bind="text: place"></span>
+			<p>Species:<ul data-bind="foreach: species">
+				<li data-bind="text: $data"></li>
+			</ul>
+		</div-->
+	</div>
+	</div>
+	</div>
+
+	<!-- This next span is used as a hidden staging area for the infoWindow text
+		without putting it in the actual html, it won't get parsed by knockout
+		and our bindings won't be translated. -->
+	<span id ="lakeDetails" style="display: none">
+		<div data-bind="with: currentLake">
+			<div data-bind="text: place"></div>
+			<div data-bind="html: iFishLink"></div>
+			<p>Species:<ul data-bind="foreach: species">
+				<li data-bind="text: $data"></li>
+			</ul>
+		</div>
+	</span>
+	<!--button>Dump</button-->
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <!--script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -51,6 +93,7 @@
 	<script src="js/models/lakeData.js"></script>
 	<script src="js/models/lakeInfo.js"></script>
 	<script src="js/models/lakeScraper.js"></script>
+	<script src="js/offcanvas.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
