@@ -12,8 +12,20 @@
 }
 
 .lakes-scrollable {
+	padding-left: 0px;
 	overflow-y: scroll;
 	max-height: calc(100vh - 110px);
+}
+.lakes-item {
+  position: relative;
+  display: block;
+  padding: 2px 2px;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.lakes-item:hover {
+    background-color: #ffc;
 }
 
 .fishmap-header {
