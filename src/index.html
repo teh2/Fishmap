@@ -35,8 +35,33 @@
 		<li>Two</li>
       </ul-->
 	  <div>search bar</div>
-	  <div>filters</div>
-      <ul class="nav lakes-scrollable listView" data-bind="foreach: lakes"> <!-- nav navmenu-nav list-goup  -->
+	<div class="dropdown" id="filtersMenu">
+		<button class="btn btn-default dropdown-toggle" type="button" id="filtersMenuButton" data-toggle="dropdown">filters<span class="caret"></span></button>
+		<ul class="dropdown-menu" role="menu" aria-labelledby="filtersMenuButton">
+          <li class="dropdown-header">Areas</li>
+          <li class="divider"></li>
+		  <div data-bind="with: areaFilters">
+		  <li><input type="checkbox" role="menuitem" data-bind="checked: NW">&nbsp;NorthWest</input></li>
+          <li><input type="checkbox" role="menuitem" data-bind="checked: NE">&nbsp;NorthEast</input></li>
+          <li><input type="checkbox" role="menuitem" data-bind="checked: WC">&nbsp;WestCentral</input></li>
+          <li><input type="checkbox" role="menuitem" data-bind="checked: EC">&nbsp;EastCentral</input></li>
+          <li><input type="checkbox" role="menuitem" data-bind="checked: S">&nbsp;South</input></li>
+		  </div>
+<!--
+		  <li role="presentation"><input type="checkbox"><a role="menuitem" tabindex="-1" href="#">NorthWest</a></li>
+          <li role="presentation"><input type="checkbox"><a role="menuitem" tabindex="-1" href="#">NorthEast</a></li>
+          <li role="presentation"><input type="checkbox"><a role="menuitem" tabindex="-1" href="#">WestCentral</a></li>
+          <li role="presentation"><input type="checkbox"><a role="menuitem" tabindex="-1" href="#">EastCentral</a></li>
+          <li role="presentation"><input type="checkbox"><a role="menuitem" tabindex="-1" href="#">South</a></li>
+-->
+          <li role="presentation" class="divider"></li>
+          <li role="presentation" class="dropdown-header">Species</li>
+          <li role="presentation" class="divider"></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Bluegill</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Crappie</a></li>
+        </ul>
+	</div>
+      <ul class="nav lakes-scrollable listView" data-bind="foreach: filteredLakes"> <!-- nav navmenu-nav list-goup  -->
 		<li class="lakes-item" data-bind="text: displayName, click: $parent.setCurrentLake"></li>
       </ul>
     </div>

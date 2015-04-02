@@ -9,6 +9,38 @@ var ViewModel = function() {
 //	self.lakeScraper = new LakeScraper(self.lakes);
 	self.currentLake = ko.observable(self.lakes()[0]);
 	self.infoWindow;
+
+	self.areaFilters = ko.observable({
+		NW: ko.observable(false),
+		NE: ko.observable(false),
+		WC: ko.observable(false),
+		EC: ko.observable(true),
+		S: ko.observable(false)
+	});
+
+	self.filteredLakes = ko.computed(function() {
+		var filtered = [];
+		// console.log("filters:");
+		// console.log(self.areaFilters());
+//		console.log("NW:"+self.areaFilters().NW());
+		// self.areaFilters["NE"];
+		// self.areaFilters["WC"];
+		// self.areaFilters["EC"];
+		// self.areaFilters["S"];
+		self.lakes().forEach(function(aLake) {
+//			console.log("area:"+aLake.area());
+			if ("" != aLake.area()) {
+//				console.log("filter:"+self.areaFilters()[aLake.area()]());
+				if (self.areaFilters()[aLake.area()]()) {
+	//				console.log("filtering-add:"+aLake.name());
+					filtered[filtered.length] = aLake;
+				};
+			};
+		});
+		// console.log("filtered list:");
+		// console.log(filtered);
+		return filtered;
+	});
 	self.setCurrentLake = function(theLake) {
 		self.currentLake(theLake);
 		self.displayInfo();
@@ -24,9 +56,11 @@ var ViewModel = function() {
 			var info = new LakeInfo(aLake.name, aLake.href);
 			info.county(aLake.county);
 			info.latlon(aLake.latlon);
+			info.area(aLake.area);
 			aLake.species.forEach(function(aSpecies) {
 				info.species.push(aSpecies);
 			});
+//Add filtering here -->
 			self.lakes.push(info);
 		});
 	};
@@ -38,7 +72,7 @@ var ViewModel = function() {
 		document.body.appendChild(script);
 	};
 	
-	//self.markers = [];
+
 
 	self.addMapMarkers = function() {
 		var fishSymbol = {
@@ -50,6 +84,7 @@ var ViewModel = function() {
 		bounds.extend(self.map.getCenter());
 		self.lakes().forEach(function(info) {
 			if (0 < info.latlon().length) {
+//Add filtering here -->
 				var nums = info.latlon().split(",");
 				var ll = new google.maps.LatLng(nums[0], nums[1]);
 				var marker = new google.maps.Marker({
@@ -82,8 +117,16 @@ var ViewModel = function() {
 		// iwContent = iwContent + "<a href='http://www.ifishillinois.org"+info.href()+"'>lake report at ifishillinois.org</a>"; 
 		self.infoWindow.setContent($('#lakeDetails').html());
 		self.infoWindow.open(self.map, self.currentLake().marker());
+console.log("NW:"+self.areaFilters()["NW"]()+",NE:"+self.areaFilters()["NE"]()+",WC:"+
+	self.areaFilters()["WC"]()+",EC:"+self.areaFilters()["EC"]()+",S:"+self.areaFilters()["S"]());
 	};
-	
+	self.setupFiltersMenu = function() {
+		$('#filtersMenu .dropdown-menu li').on({
+			"click":function(e){
+				e.stopPropagation();
+			}
+		});
+	};
 };
 
 function showMap() {
@@ -115,4 +158,5 @@ $(document).ready(function() {
 	// });
 	viewModel.loadLakeData();
 	viewModel.loadMapApi();
+	viewModel.setupFiltersMenu();
 });
