@@ -18,29 +18,54 @@ var ViewModel = function() {
 		S: ko.observable(false)
 	});
 
+	self.speciesFilters = ko.observableArray();
+
+	self.sortedSpeciesFilters = ko.computed(function() {
+		var sorted = self.speciesFilters().sort(function(a,b) {
+			var aVal = a().name().valueOf();
+			var bVal = b().name().valueOf();
+			if (aVal < bVal)
+				return -1;
+			else if (bVal < aVal)
+				return 1;
+			else
+				return 0;
+		});
+		return sorted;
+	});
+	
 	self.filteredLakes = ko.computed(function() {
 		var filtered = [];
-		// console.log("filters:");
-		// console.log(self.areaFilters());
-//		console.log("NW:"+self.areaFilters().NW());
-		// self.areaFilters["NE"];
-		// self.areaFilters["WC"];
-		// self.areaFilters["EC"];
-		// self.areaFilters["S"];
 		self.lakes().forEach(function(aLake) {
-//			console.log("area:"+aLake.area());
 			if ("" != aLake.area()) {
-//				console.log("filter:"+self.areaFilters()[aLake.area()]());
 				if (self.areaFilters()[aLake.area()]()) {
-	//				console.log("filtering-add:"+aLake.name());
-					filtered[filtered.length] = aLake;
+					if (self.hasChosenSpecies(aLake)) {
+						filtered[filtered.length] = aLake;
+					};
 				};
 			};
 		});
-		// console.log("filtered list:");
-		// console.log(filtered);
 		return filtered;
 	});
+
+	self.hasChosenSpecies = function(theLake) {
+		if (0 < theLake.species().length) {
+			for (var i = 0; i < self.speciesFilters().length; i++) {
+				var sFilter = self.speciesFilters()[i];
+			//self.speciesFilters().some(function(sFilter) {
+//console.log("checking: " + sFilter().name() + " against " + theLake.name());
+				if (sFilter().value()) {
+					if (-1 != $.inArray(sFilter().name(), theLake.species())) {
+//console.log("  found!");
+						return true;
+					};
+				};
+				//return false;
+			};
+		};
+		return false;
+	};
+
 	self.setCurrentLake = function(theLake) {
 		self.currentLake(theLake);
 		self.displayInfo();
@@ -59,12 +84,37 @@ var ViewModel = function() {
 			info.area(aLake.area);
 			aLake.species.forEach(function(aSpecies) {
 				info.species.push(aSpecies);
+				//If not there already, add species to speciesFilters...
+				self.addSpeciesFilter(aSpecies);
 			});
 			self.buildMarker(info);
 			self.lakes.push(info);
 		});
+		self.setInitialSpeciesFilterThreshold(10);
 	};
-	
+
+	//Note: only adds it if it's not already there...
+	self.addSpeciesFilter = function(name) {
+		var foundIt = false;
+		self.speciesFilters().forEach(function(sFilter) {
+			if (sFilter().name().valueOf() == name.valueOf()) {
+				foundIt = true;
+				sFilter().count(sFilter().count() + 1);
+			};
+		});
+		if (!foundIt) {
+			self.speciesFilters.push(ko.observable(new SpeciesFilter(name, true)));
+		};
+	};
+
+	self.setInitialSpeciesFilterThreshold = function(max) {
+		self.speciesFilters().forEach(function(sFilter) {
+			if (sFilter().count() < max) {
+				sFilter().value(false);
+			};
+		});
+	};
+
 	self.buildMarker = function(info) {
 		var fishSymbol = {
 						path: "M 0 5 C 5 0 5 0 20 10 C 17 5 17 5 20 0 C 5 10 5 10 0 5 z",

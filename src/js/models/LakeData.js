@@ -1066,7 +1066,7 @@ var LakeData = [
 	{
 		"name":"LAKE MICHIGAN",
 		"href":"/lmich/",
-		"species":["Bluegill","Brown Trout","Carp","Channel Catfish","Coho Salmon","Crappie","Freshwater Drum","King Salmon","Largemouth Bass","Perch","Sheephead","Silver Bass","Smallmouth bass","Smelt","Steelhead","Trout"],
+		"species":["Bluegill","Brown trout","Common carp","Channel catfish","Coho salmon","Crappie","Freshwater drum","King salmon","Largemouth bass","Perch","Sheephead","Silver bass","Smallmouth bass","Smelt","Steelhead","Trout"],
 		"latlon":"42.111575,-87.531519",
 		"area":"NE"
 	},

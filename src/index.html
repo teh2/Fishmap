@@ -45,21 +45,17 @@
           <li><input type="checkbox" role="menuitem" data-bind="checked: EC">&nbsp;EastCentral</input></li>
           <li><input type="checkbox" role="menuitem" data-bind="checked: S">&nbsp;South</input></li>
 		  </div>
-<!--
-		  <li role="presentation"><input type="checkbox"><a role="menuitem" tabindex="-1" href="#">NorthWest</a></li>
-          <li role="presentation"><input type="checkbox"><a role="menuitem" tabindex="-1" href="#">NorthEast</a></li>
-          <li role="presentation"><input type="checkbox"><a role="menuitem" tabindex="-1" href="#">WestCentral</a></li>
-          <li role="presentation"><input type="checkbox"><a role="menuitem" tabindex="-1" href="#">EastCentral</a></li>
-          <li role="presentation"><input type="checkbox"><a role="menuitem" tabindex="-1" href="#">South</a></li>
--->
           <li role="presentation" class="divider"></li>
           <li role="presentation" class="dropdown-header">Species</li>
           <li role="presentation" class="divider"></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Bluegill</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Crappie</a></li>
+          <!--li role="presentation"><a role="menuitem" tabindex="-1" href="#">Bluegill</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Crappie</a></li-->
+		<div class="speciesFilters" data-bind="foreach: sortedSpeciesFilters">
+			<li><input type="checkbox" role="menuitem" data-bind="checked: $data.value"></input>&nbsp;<span data-bind="text: $data.displayName"></span></li>
+		</div>
         </ul>
 	</div>
-      <ul class="nav lakes-scrollable listView" data-bind="foreach: filteredLakes"> <!-- nav navmenu-nav list-goup  -->
+      <ul class="nav lakes-scrollable listView" data-bind="foreach: filteredLakes">
 		<li class="lakes-item" data-bind="text: displayName, click: $parent.setCurrentLake"></li>
       </ul>
     </div>
@@ -114,6 +110,7 @@
 
 	<script src="js/models/lakeData.js"></script>
 	<script src="js/models/lakeInfo.js"></script>
+	<script src="js/models/SpeciesFilter.js"></script>
 	<script src="js/models/lakeScraper.js"></script>
 	<script src="js/offcanvas.js"></script>
 	<script src="js/main.js"></script>

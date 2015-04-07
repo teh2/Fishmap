@@ -11,19 +11,18 @@ ToDos:
 Learn more about Bower - how to keep components up to date
 Learn more about Bower - how to use src/dev/dist
 search function - real time, by name
-filter function - pick one or more species
-filter function - other criteria?
 gulp - build script
-integrate bootstrap
 style up the page
 make it responsive
 test it in a phone browser
+Add sort criteria to species dropdown (alpha, frequency, threshold)
 add API calls - fishing reports
 add API calls - pics, pintrest, flickr, ???
 add API calls - wikipedia articles
 Does the trib have an API?
 Maybe the Herald?
-add lat/lon (third column of lakes)
+add lat/lon (to lakes with no species)
+add "Unknown" species to lakes with no species
 local storage
 	http://stackoverflow.com/questions/11601365/how-can-i-implement-mvvm-with-offline-storage-and-knockout-js
 	https://github.com/jimrhoskins/knockout.localStorage
@@ -44,11 +43,14 @@ Store info locally
 Set up the map
 Add pins to the map
 change pin to a fish symbol
+integrate bootstrap
 Area filters. Got 'em checking and unchecking in the dropdown.
 Got the lakes list to repopulate.
 Got the markers to repopulate.
 fixed - markers don't populate on startup
 filter function - area - nw, ne, ec, wc, s
+filter function - pick one or more species
+filter function - other criteria?
 
 
 Development log:
