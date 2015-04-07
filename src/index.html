@@ -13,13 +13,11 @@
 	<link rel="stylesheet" href="styles/offcanvas.css">
   </head>
   <body>
-	<div class="container">
-	<div class="row">
-    <header class="fishmap-header"> <!-- navbar navbar-default navbar-fixed-top hidden-md hidden-lg -->
-      <button type="button" class="col-xs-2 btn-group hidden-sm hidden-md hidden-lg " data-toggle="offcanvas"> <!--   data-target=".navmenu" -->
-		Lakes
-      </button>
-      <h1 class="col-sx-10 text-center">FishMap</h1>
+	<div class="container-fluid">
+	<div class="row fishmap-header">
+    <header> <!--  class="fishmap-header" navbar navbar-default navbar-fixed-top hidden-md hidden-lg -->
+      <button type="button" class="col-xs-1 btn vcenter hidden-sm hidden-md hidden-lg" data-toggle="offcanvas"> <!--   data-target=".navmenu" -->Lakes</button>
+	  <h1 class="col-xs-10 col-sm-12 text-center vcenter">FishMap</h1>
     </header>
 	</div>
 
@@ -66,15 +64,12 @@
       </ul>
     </div>
 	<div class="col-xs-12 col-sm-9">
-		<div class="searchBar">
-			Search
-		</div>
 		<div class="mapView"> <!--  style="width: 500px; height: 500px; display: block" -->
 			Map
 		</div>
-		<div class="statusBar">
-			<h2 id="statusText">Status Bar goes here</h2>
-		</div>
+		<!--div class="statusBar">
+			<h2 id="statusText">Status Bar goes <span data-bind="text: currentLake() && currentLake().name"</span></h2><
+		</div-->
 		<!--div class="detailsView" data-bind="with: currentLake">
 			<h2>Details view goes here</h2>
 			<p>Name:<span data-bind="text: name"></span>

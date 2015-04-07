@@ -84,7 +84,7 @@ var LakeData = [
 		"href":"/profiles/display_lake.php?waternum=00224",
 		"county":"Wabash",
 		"species":["Bluegill","Channel catfish","Crappie","Largemouth bass"],
-		"latlon":"",
+		"latlon":"38.350033,-87.831660",
 		"area":"S"
 	},
 	{
@@ -173,7 +173,7 @@ var LakeData = [
 		"county":"Coles",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"EC"
 	},
 	{
 		"name":" CANTON LAKE",
@@ -181,7 +181,7 @@ var LakeData = [
 		"county":"Fulton",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NW"
 	},
 	{
 		"name":" CARBONDALE CITY RESERVOIR",
@@ -189,7 +189,7 @@ var LakeData = [
 		"county":"Jackson",
 		"species":["Bluegill","Channel catfish","Crappie","Largemouth bass","Redear sunfish"],
 		"latlon":"37.697785,-89.228351",
-		"area":""
+		"area":"S"
 	},
 	{
 		"name":" CARLINVILLE #2, LAKE",
@@ -197,7 +197,7 @@ var LakeData = [
 		"county":"Macoupin",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"WC"
 	},
 	{
 		"name":" CARLTON, LAKE",
@@ -205,7 +205,7 @@ var LakeData = [
 		"county":"Whiteside",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NW"
 	},
 	{
 		"name":" CARLYLE LAKE",
@@ -213,7 +213,7 @@ var LakeData = [
 		"county":"Clinton",
 		"species":["Bluegill","Channel catfish","Crappie","Flathead catfish","Largemouth bass","Redear sunfish","Sauger","White bass"],
 		"latlon":"38.666444,-89.285570",
-		"area":""
+		"area":"WC"
 	},
 	{
 		"name":" CASEY PARK LAKE",
@@ -221,7 +221,7 @@ var LakeData = [
 		"county":"Clark",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"EC"
 	},
 	{
 		"name":" CEDAR LAKE - JACKSON CO.",
@@ -229,7 +229,7 @@ var LakeData = [
 		"county":"Jackson",
 		"species":["Bluegill","Crappie","Largemouth bass","Redear sunfish","Striped bass"],
 		"latlon":"37.636537,-89.280552",
-		"area":""
+		"area":"S"
 	},
 	{
 		"name":" CENTENIAL PARK LAKE",
@@ -237,7 +237,7 @@ var LakeData = [
 		"county":"Whiteside",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NW"
 	},
 	{
 		"name":" CENTRALIA, LAKE",
@@ -245,7 +245,7 @@ var LakeData = [
 		"county":"Marion",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"S"
 	},
 	{
 		"name":" CHARLESTON LOWER CHANNEL",
@@ -253,7 +253,7 @@ var LakeData = [
 		"county":"Coles",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"EC"
 	},
 	{
 		"name":" CHARLESTON SIDE CHANNEL",
@@ -261,7 +261,7 @@ var LakeData = [
 		"county":"Coles",
 		"species":["Bluegill","Channel catfish","Common carp","Crappie","Flathead catfish","Freshwater drum","Hybrid Striped Bass (Wiper)","Largemouth bass","Walleye x Sauger hybrid (Saugeye)"],
 		"latlon":"39.466765,-88.145279",
-		"area":""
+		"area":"EC"
 	},
 	{
 		"name":" CHRISTOPHER OLD CITY LAKE",
@@ -269,7 +269,7 @@ var LakeData = [
 		"county":"Franklin",
 		"species":["Black crappie","Bluegill","Channel catfish","Largemouth bass"],
 		"latlon":"37.985702,-89.071235",
-		"area":""
+		"area":"S"
 	},
 	{
 		"name":" CITIZEN'S LAKE",
@@ -277,7 +277,7 @@ var LakeData = [
 		"county":"Warren",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NW"
 	},
 	{
 		"name":" CLEAR LAKE - KICKAPOO",
@@ -285,7 +285,7 @@ var LakeData = [
 		"county":"Vermilion",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"EC"
 	},
 	{
 		"name":" CLINTON LAKE",
@@ -293,7 +293,7 @@ var LakeData = [
 		"county":"DeWitt",
 		"species":["Crappie","Hybrid Striped Bass (Wiper)","Largemouth bass","Smallmouth bass","Walleye"],
 		"latlon":"40.155479,-88.826366",
-		"area":""
+		"area":"EC"
 	},
 	{
 		"name":" COFFEEN LAKE",
@@ -301,7 +301,7 @@ var LakeData = [
 		"county":"Montgomery",
 		"species":["Channel catfish","Crappie","Flathead catfish","Largemouth bass"],
 		"latlon":"39.043280,-89.398372",
-		"area":""
+		"area":"WC"
 	},
 	{
 		"name":" COLES COUNTY AIRPORT LAKE",
@@ -309,7 +309,7 @@ var LakeData = [
 		"county":"Coles",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"EC"
 	},
 	{
 		"name":" CRAB ORCHARD LAKE",
@@ -317,7 +317,7 @@ var LakeData = [
 		"county":"Williamson",
 		"species":["Bluegill","Channel catfish","Crappie","Largemouth bass","White bass"],
 		"latlon":"37.723410,-89.093923",
-		"area":""
+		"area":"S"
 	},
 	{
 		"name":" CRAWFORD CO CONS AR POND #1",
@@ -325,7 +325,7 @@ var LakeData = [
 		"county":"Crawford",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"S"
 	},
 	{
 		"name":" CRYSTAL LAKE (UPD)",
@@ -333,7 +333,7 @@ var LakeData = [
 		"county":"Champaign",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"EC"
 	},
 	{
 		"name":" DAWSON LAKE",
@@ -341,7 +341,7 @@ var LakeData = [
 		"county":"McLean",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"EC"
 	},
 	{
 		"name":" DECATUR, LAKE",
@@ -349,7 +349,7 @@ var LakeData = [
 		"county":"Macon",
 		"species":["Bluegill","Channel catfish","Common carp","Crappie","Flathead catfish","Freshwater drum","Hybrid Striped Bass (Wiper)","Largemouth bass","Walleye","White bass"],
 		"latlon":"39.828639,-88.918775",
-		"area":""
+		"area":"EC"
 	},
 	{
 		"name":" DEFIANCE LAKE",
@@ -357,7 +357,7 @@ var LakeData = [
 		"county":"McHenry",
 		"species":["Black crappie","Bluegill","Channel catfish","Largemouth bass","Northern pike"],
 		"latlon":"42.319418,-88.225812",
-		"area":""
+		"area":"NE"
 	},
 	{
 		"name":" DELAVAN LAKE",
@@ -365,7 +365,7 @@ var LakeData = [
 		"county":"Tazewell",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NW"
 	},
 	{
 		"name":" DERBY LAKE W.S.C.",
@@ -373,15 +373,15 @@ var LakeData = [
 		"county":"Randolph",
 		"species":["Bluegill","Crappie","Largemouth bass"],
 		"latlon":"38.183143,-89.750795",
-		"area":""
+		"area":"WC"
 	},
 	{
 		"name":" DEVILS KITCHEN LAKE",
 		"href":"/profiles/display_lake.php?waternum=00270",
 		"county":"Williamson",
 		"species":["Bluegill","Largemouth bass","Rainbow trout","Redear sunfish"],
-		"latlon":"",
-		"area":""
+		"latlon":"37.626094,-89.092441",
+		"area":"S"
 	},
 	{
 		"name":" DIAMOND LAKE",
@@ -389,7 +389,7 @@ var LakeData = [
 		"county":"Lake",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NE"
 	},
 	{
 		"name":" DOLAN LAKE",
@@ -397,7 +397,7 @@ var LakeData = [
 		"county":"Hamilton",
 		"species":["Bluegill","Channel catfish","Crappie","Largemouth bass"],
 		"latlon":"38.059678,-88.403830",
-		"area":""
+		"area":"S"
 	},
 	{
 		"name":" DONGOLA CITY RESERVOIR",
@@ -405,7 +405,7 @@ var LakeData = [
 		"county":"Union",
 		"species":["Bluegill","Channel catfish","Crappie","Largemouth bass","Redear sunfish"],
 		"latlon":"37.360081,-89.174981",
-		"area":""
+		"area":"S"
 	},
 	{
 		"name":" DRAKE LAKE - JEPCSFWA",
@@ -413,7 +413,7 @@ var LakeData = [
 		"county":"Cass",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"WC"
 	},
 	{
 		"name":" DREAMLAND POND (DPD)",
@@ -421,7 +421,7 @@ var LakeData = [
 		"county":"Macon",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"EC"
 	},
 	{
 		"name":" DU QUOIN CITY RESERVOIR",
@@ -429,7 +429,7 @@ var LakeData = [
 		"county":"Perry",
 		"species":["Bluegill","Crappie","Largemouth bass","Redear sunfish"],
 		"latlon":"38.072650,-89.220947",
-		"area":""
+		"area":"S"
 	},
 	{
 		"name":" DUTCHMAN LAKE",
@@ -437,7 +437,7 @@ var LakeData = [
 		"county":"Johnson",
 		"species":["Bluegill","Channel catfish","Largemouth bass","Redear sunfish","White crappie"],
 		"latlon":"37.491601,-88.919285",
-		"area":""
+		"area":"S"
 	},
 	{
 		"name":" EAST FORK LAKE",
@@ -445,7 +445,7 @@ var LakeData = [
 		"county":"Richland",
 		"species":["Bluegill","Channel catfish","Largemouth bass","Walleye","White crappie"],
 		"latlon":"38.760104,-88.063881",
-		"area":""
+		"area":"S"
 	},
 	{
 		"name":" EAST LAKE W.S.C.",
@@ -453,7 +453,7 @@ var LakeData = [
 		"county":"Randolph",
 		"species":["Bluegill","Channel catfish","Crappie","Largemouth bass"],
 		"latlon":"38.180984,-89.716549",
-		"area":""
+		"area":"WC"
 	},
 	{
 		"name":" EUREKA, LAKE",
@@ -461,7 +461,7 @@ var LakeData = [
 		"county":"Woodford",
 		"species":["Largemouth bass","Northern pike"],
 		"latlon":"40.7050613,-89.282006",
-		"area":""
+		"area":"NW"
 	},
 	{
 		"name":" EVERGREEN LAKE",
@@ -469,7 +469,7 @@ var LakeData = [
 		"county":"McLean",
 		"species":["Crappie","Largemouth bass","Muskellunge","Walleye x Sauger hybrid (Saugeye)"],
 		"latlon":"40.6305236,-89.0351235",
-		"area":""
+		"area":"EC"
 	},
 	{
 		"name":" FERNE CLYFFE LAKE",
@@ -477,7 +477,7 @@ var LakeData = [
 		"county":"Johnson",
 		"species":["Bluegill","Channel catfish","Crappie","Largemouth bass","Rainbow trout","Redear sunfish"],
 		"latlon":"37.533209,-88.976207",
-		"area":""
+		"area":"S"
 	},
 	{
 		"name":" FORBES LAKE",
@@ -485,7 +485,7 @@ var LakeData = [
 		"county":"Marion",
 		"species":["Bluegill","Channel catfish","Largemouth bass","Walleye x Sauger hybrid (Saugeye)","White crappie"],
 		"latlon":"38.721583,-88.758547",
-		"area":""
+		"area":"S"
 	},
 	{
 		"name":" FOREST PARK LAGOON",
@@ -493,7 +493,7 @@ var LakeData = [
 		"county":"Shelby",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"EC"
 	},
 	{
 		"name":" FORT MASSAC FAIRGROUNDS POND",
@@ -501,7 +501,7 @@ var LakeData = [
 		"county":"Massac",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"S"
 	},
 	{
 		"name":" FOX CHAIN O' LAKES",
@@ -509,7 +509,7 @@ var LakeData = [
 		"county":"Lake",
 		"species":["Bluegill","Channel catfish","Crappie","Flathead catfish","Largemouth bass","Muskellunge","Northern pike","Walleye"],
 		"latlon":"42.411427,-88.148193",
-		"area":""
+		"area":"NE"
 	},
 	{
 		"name":" FRANK HOLTEN MAIN LAKE",
@@ -517,7 +517,7 @@ var LakeData = [
 		"county":"St. Clair",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"WC"
 	},
 	{
 		"name":" GEBHARD WOODS #1-4",
@@ -525,7 +525,7 @@ var LakeData = [
 		"county":"Grundy",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NE"
 	},
 	{
 		"name":" GEORGE, LAKE",
@@ -533,7 +533,7 @@ var LakeData = [
 		"county":"Rock Island",
 		"species":["","","","Channel catfish","Crappie","Largemouth bass"],
 		"latlon":"41.428656,-90.830930",
-		"area":""
+		"area":"NW"
 	},
 	{
 		"name":" GILLESPIE NEW CITY LAKE",
@@ -541,7 +541,7 @@ var LakeData = [
 		"county":"Macoupin",
 		"species":[],
 		"latlon":"39.148323,-89.878677",
-		"area":""
+		"area":"WC"
 	},
 	{
 		"name":" GILLESPIE OLD CITY LAKE",
@@ -549,7 +549,7 @@ var LakeData = [
 		"county":"Macoupin",
 		"species":["Bluegill","Channel catfish","Crappie","Largemouth bass","Redear sunfish"],
 		"latlon":"39.144566,-89.860958",
-		"area":""
+		"area":"WC"
 	},
 	{
 		"name":" GLADSTONE LAKE",
@@ -557,7 +557,7 @@ var LakeData = [
 		"county":"Henderson",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NW"
 	},
 	{
 		"name":" GLEN OAK LAGOON",
@@ -565,7 +565,7 @@ var LakeData = [
 		"county":"Peoria",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NW"
 	},
 	{
 		"name":" GLEN SHOALS LAKE",
@@ -573,7 +573,7 @@ var LakeData = [
 		"county":"Montgomery",
 		"species":["Channel catfish","Hybrid Striped Bass (Wiper)","Largemouth bass","White crappie"],
 		"latlon":"39.205865,-89.464792",
-		"area":""
+		"area":"WC"
 	},
 	{
 		"name":" GREEN LAKE (CCFPD)",
@@ -581,7 +581,7 @@ var LakeData = [
 		"county":"Lake",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NE"
 	},
 	{
 		"name":" GREENVILLE NEW CITY LAKE",
@@ -589,7 +589,7 @@ var LakeData = [
 		"county":"Bond",
 		"species":["Bluegill","Channel catfish","Crappie","Flathead catfish","Hybrid Striped Bass (Wiper)","Largemouth bass"],
 		"latlon":"38.937199,-89.395437",
-		"area":""
+		"area":"WC"
 	},
 	{
 		"name":" GREENVILLE OLD CITY LAKE",
@@ -597,15 +597,15 @@ var LakeData = [
 		"county":"Bond",
 		"species":[],
 		"latlon":"38.950027,-89.377628",
-		"area":""
+		"area":"WC"
 	},
 	{
 		"name":" GRIDLEY LAKE - JEPCSFWA",
 		"href":"/profiles/display_lake.php?waternum=04706",
 		"county":"Cass",
 		"species":[],
-		"latlon":"",
-		"area":""
+		"latlon":"39.9849965,-90.0604572",
+		"area":"WC"
 	},
 	{
 		"name":" GURNEY ROAD POND - JEPCSFWA",
@@ -613,7 +613,7 @@ var LakeData = [
 		"county":"Cass",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"WC"
 	},
 	{
 		"name":" HARRISBURG NEW CITY RESERVOIR",
@@ -621,7 +621,7 @@ var LakeData = [
 		"county":"Saline",
 		"species":["Bluegill","Channel catfish","Crappie","Largemouth bass"],
 		"latlon":"37.846540,-88.586949",
-		"area":""
+		"area":"S"
 	},
 	{
 		"name":" HEIDECKE LAKE",
@@ -629,7 +629,7 @@ var LakeData = [
 		"county":"Grundy",
 		"species":["Channel catfish","Hybrid Striped Bass (Wiper)","Largemouth bass","Muskellunge","Smallmouth bass","Walleye","White bass"],
 		"latlon":"41.372164,-88.340127",
-		"area":""
+		"area":"NE"
 	},
 	{
 		"name":" HENNEPIN CANAL",
@@ -637,7 +637,7 @@ var LakeData = [
 		"county":"Bureau",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NW"
 	},
 	{
 		"name":" HERRIN LAKE #1",
@@ -645,7 +645,7 @@ var LakeData = [
 		"county":"Williamson",
 		"species":["Bluegill","Channel catfish","Largemouth bass","Redear sunfish","White crappie"],
 		"latlon":"37.762819,-89.031270",
-		"area":""
+		"area":"S"
 	},
 	{
 		"name":" HERRIN LAKE #2",
@@ -653,7 +653,7 @@ var LakeData = [
 		"county":"Williamson",
 		"species":["Black crappie","Bluegill","Channel catfish","Largemouth bass"],
 		"latlon":"37.633674,-89.016136",
-		"area":""
+		"area":"S"
 	},
 	{
 		"name":" HEYWORTH CITY LAKE",
@@ -661,7 +661,7 @@ var LakeData = [
 		"county":"McLean",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"EC"
 	},
 	{
 		"name":" HIGHLAND OLD CITY LAKE",
@@ -669,7 +669,7 @@ var LakeData = [
 		"county":"Madison",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"WC"
 	},
 	{
 		"name":" HOLIDAY PARK LAKE",
@@ -677,7 +677,7 @@ var LakeData = [
 		"county":"McLean",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"EC"
 	},
 	{
 		"name":" HOMER LAKE (CCFPD)",
@@ -685,7 +685,7 @@ var LakeData = [
 		"county":"Champaign",
 		"species":["Bluegill","Channel catfish","Largemouth bass","White crappie"],
 		"latlon":"40.065055,-87.988866",
-		"area":""
+		"area":"EC"
 	},
 	{
 		"name":" HOPEDALE CITY POND",
@@ -693,7 +693,7 @@ var LakeData = [
 		"county":"Tazewell",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NW"
 	},
 	{
 		"name":" HORSESHOE LAKE - ALEXANDER",
@@ -701,7 +701,7 @@ var LakeData = [
 		"county":"Alexander",
 		"species":["Bluegill","Crappie","Largemouth bass","Redear sunfish"],
 		"latlon":"37.142873,-89.353598",
-		"area":""
+		"area":"S"
 	},
 	{
 		"name":" HORSESHOE LAKE - MADISON",
@@ -709,7 +709,7 @@ var LakeData = [
 		"county":"Madison",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"WC"
 	},
 	{
 		"name":" HORTON LAKE",
@@ -717,7 +717,7 @@ var LakeData = [
 		"county":"Hancock",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"WC"
 	},
 	{
 		"name":" I & M CANAL",
@@ -733,7 +733,7 @@ var LakeData = [
 		"county":"Sangamon",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"WC"
 	},
 	{
 		"name":" INDEPENDENCE LAKE (LCFPD)",
@@ -741,7 +741,7 @@ var LakeData = [
 		"county":"Lake",
 		"species":["Black crappie","Bluegill","Largemouth bass","Muskellunge"],
 		"latlon":"42.314055,-87.948656",
-		"area":""
+		"area":"NE"
 	},
 	{
 		"name":" JACKSONVILLE, LAKE",
@@ -749,7 +749,7 @@ var LakeData = [
 		"county":"Morgan",
 		"species":["Bluegill","Channel catfish","Hybrid Striped Bass (Wiper)","Largemouth bass","Redear sunfish","White crappie"],
 		"latlon":"39.675191,-90.198236",
-		"area":""
+		"area":"WC"
 	},
 	{
 		"name":" JOHNSON LAKE-BANNER MARSH",
@@ -757,7 +757,7 @@ var LakeData = [
 		"county":"Peoria",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NW"
 	},
 	{
 		"name":" JOHNSON SAUK TRAIL LAKE",
@@ -765,7 +765,7 @@ var LakeData = [
 		"county":"Henry",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NW"
 	},
 	{
 		"name":" JONES PARK LAKE",
@@ -773,7 +773,7 @@ var LakeData = [
 		"county":"St. Clair",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"WC"
 	},
 	{
 		"name":" JONES STATE LAKE",
@@ -781,7 +781,7 @@ var LakeData = [
 		"county":"Saline",
 		"species":["Black crappie","Bluegill","Channel catfish","Largemouth bass"],
 		"latlon":"37.688493,-88.387703",
-		"area":""
+		"area":"S"
 	},
 	{
 		"name":" JONES STATE LAKE POND",
@@ -789,7 +789,7 @@ var LakeData = [
 		"county":"Saline",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"S"
 	},
 	{
 		"name":" JUBILEE COLLEGE S.P. POND",
@@ -797,7 +797,7 @@ var LakeData = [
 		"county":"Peoria",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NW"
 	},
 	{
 		"name":" KASKASKIA RIVER",
@@ -813,15 +813,15 @@ var LakeData = [
 		"county":"Champaign",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"EC"
 	},
 	{
 		"name":" KINCAID CITY RESERVOIR",
 		"href":"/profiles/display_lake.php?waternum=04647",
 		"county":"Christian",
 		"species":["Bluegill","Channel catfish","Crappie","Largemouth bass"],
-		"latlon":"",
-		"area":""
+		"latlon":"39.578094,-89.374087",
+		"area":"WC"
 	},
 	{
 		"name":" KINKAID LAKE",
@@ -829,7 +829,7 @@ var LakeData = [
 		"county":"Jackson",
 		"species":["Bluegill","Channel catfish","Crappie","Largemouth bass","Muskellunge","Redear sunfish","Smallmouth bass","Walleye"],
 		"latlon":"39.578172,-89.374137",
-		"area":""
+		"area":"S"
 	},
 	{
 		"name":" LAKE OF EGYPT",
@@ -837,7 +837,7 @@ var LakeData = [
 		"county":"Johnson",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"S"
 	},
 	{
 		"name":" LAKE OF THE WOODS (CCFPD)",
@@ -845,7 +845,7 @@ var LakeData = [
 		"county":"Champaign",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"EC"
 	},
 	{
 		"name":" LASALLE COOLING LAKE",
@@ -853,7 +853,7 @@ var LakeData = [
 		"county":"LaSalle",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NW"
 	},
 	{
 		"name":" LE-AQUA-NA, LAKE",
@@ -861,7 +861,7 @@ var LakeData = [
 		"county":"Stephenson",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NW"
 	},
 	{
 		"name":" LEVINGS LAKE",
@@ -869,7 +869,7 @@ var LakeData = [
 		"county":"Winnebago",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NW"
 	},
 	{
 		"name":" LINCOLN TRAIL LAKE",
@@ -877,7 +877,7 @@ var LakeData = [
 		"county":"Clark",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"EC"
 	},
 	{
 		"name":" LITTLE CACHE LAKE",
@@ -885,7 +885,7 @@ var LakeData = [
 		"county":"Johnson",
 		"species":["Bluegill","Largemouth bass","Redear sunfish","White crappie"],
 		"latlon":"37.466155,-88.859655",
-		"area":""
+		"area":"S"
 	},
 	{
 		"name":" LITTLE GRASSY LAKE",
@@ -893,7 +893,7 @@ var LakeData = [
 		"county":"Williamson",
 		"species":["Bluegill","Largemouth bass","Redear sunfish"],
 		"latlon":"37.630460,-89.145276",
-		"area":""
+		"area":"S"
 	},
 	{
 		"name":" LOAMI CITY RESERVOIR",
@@ -901,7 +901,7 @@ var LakeData = [
 		"county":"Sangamon",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"WC"
 	},
 	{
 		"name":" LONG LAKE - KICKAPOO",
@@ -909,7 +909,7 @@ var LakeData = [
 		"county":"Vermilion",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"EC"
 	},
 	{
 		"name":" LOU YEAGER LAKE",
@@ -917,7 +917,7 @@ var LakeData = [
 		"county":"Montgomery",
 		"species":["Bluegill","Channel catfish","Largemouth bass","White crappie"],
 		"latlon":"39.228370,-89.604695",
-		"area":""
+		"area":"WC"
 	},
 	{
 		"name":" MACKINAW BIG POND",
@@ -925,7 +925,7 @@ var LakeData = [
 		"county":"Tazewell",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NW"
 	},
 	{
 		"name":" MALLARD LAKE (DCFPD)",
@@ -933,7 +933,7 @@ var LakeData = [
 		"county":"DuPage",
 		"species":["Bluegill","Channel catfish","Crappie","Largemouth bass","Muskellunge","Northern pike","Walleye"],
 		"latlon":"41.961567,-88.132522",
-		"area":""
+		"area":"NE"
 	},
 	{
 		"name":" MAPLE LAKE (CCFPD)",
@@ -941,7 +941,7 @@ var LakeData = [
 		"county":"Cook",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NE"
 	},
 	{
 		"name":" MASCOUTAH CITY RESERVOIR",
@@ -949,7 +949,7 @@ var LakeData = [
 		"county":"St. Clair",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"WC"
 	},
 	{
 		"name":" MATTOON, LAKE",
@@ -957,7 +957,7 @@ var LakeData = [
 		"county":"Shelby",
 		"species":["Bluegill","Channel catfish","Common carp","Crappie","Flathead catfish","Freshwater drum","Hybrid Striped Bass (Wiper)","Largemouth bass","Walleye x Sauger hybrid (Saugeye)"],
 		"latlon":"39.347206,-88.476671",
-		"area":""
+		"area":"EC"
 	},
 	{
 		"name":" MAZONIA LAKE #00",
@@ -965,7 +965,7 @@ var LakeData = [
 		"county":"Grundy",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NE"
 	},
 	{
 		"name":" MAZONIA LAKE #1",
@@ -973,7 +973,7 @@ var LakeData = [
 		"county":"Grundy",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NE"
 	},
 	{
 		"name":" MAZONIA LAKE #10",
@@ -981,7 +981,7 @@ var LakeData = [
 		"county":"Grundy",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NE"
 	},
 	{
 		"name":" MAZONIA LAKE #3",
@@ -989,7 +989,7 @@ var LakeData = [
 		"county":"Grundy",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NE"
 	},
 	{
 		"name":" MAZONIA LAKE #4",
@@ -997,7 +997,7 @@ var LakeData = [
 		"county":"Grundy",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NE"
 	},
 	{
 		"name":" MAZONIA LAKE #5",
@@ -1005,7 +1005,7 @@ var LakeData = [
 		"county":"Grundy",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NE"
 	},
 	{
 		"name":" MAZONIA LAKE #6",
@@ -1013,7 +1013,7 @@ var LakeData = [
 		"county":"Grundy",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NE"
 	},
 	{
 		"name":" MAZONIA LAKE #7",
@@ -1021,7 +1021,7 @@ var LakeData = [
 		"county":"Grundy",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NE"
 	},
 	{
 		"name":" MAZONIA LAKE #8",
@@ -1029,7 +1029,7 @@ var LakeData = [
 		"county":"Grundy",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NE"
 	},
 	{
 		"name":" MAZONIA LAKES",
@@ -1037,7 +1037,7 @@ var LakeData = [
 		"county":"Grundy",
 		"species":["Bluegill","Channel catfish","Crappie","Flathead catfish","Largemouth bass","Northern pike","Redear sunfish"],
 		"latlon":"41.196908,-88.270106",
-		"area":""
+		"area":"NE"
 	},
 	{
 		"name":" MCCULLOM LAKE",
@@ -1045,7 +1045,7 @@ var LakeData = [
 		"county":"McHenry",
 		"species":["Black crappie","Bluegill","Channel catfish","Largemouth bass","Northern pike"],
 		"latlon":"42.360965,-88.290472",
-		"area":""
+		"area":"NE"
 	},
 	{
 		"name":" MCLEANSBORO CITY LAKE",
@@ -1053,7 +1053,7 @@ var LakeData = [
 		"county":"Hamilton",
 		"species":["Bluegill","Channel catfish","Crappie","Largemouth bass"],
 		"latlon":"38.085233,-88.554537",
-		"area":""
+		"area":"S"
 	},
 	{
 		"name":" MERMET STATE LAKE",
@@ -1061,14 +1061,14 @@ var LakeData = [
 		"county":"Massac",
 		"species":["Black crappie","Bluegill","Channel catfish","Largemouth bass","Redear sunfish"],
 		"latlon":"37.257884,-88.846516",
-		"area":""
+		"area":"S"
 	},
 	{
 		"name":"LAKE MICHIGAN",
 		"href":"/lmich/",
 		"species":["Bluegill","Brown Trout","Carp","Channel Catfish","Coho Salmon","Crappie","Freshwater Drum","King Salmon","Largemouth Bass","Perch","Sheephead","Silver Bass","Smallmouth bass","Smelt","Steelhead","Trout"],
 		"latlon":"42.111575,-87.531519",
-		"area":""
+		"area":"NE"
 	},
 	{
 		"name":" MILL CREEK LAKE",
@@ -1076,7 +1076,7 @@ var LakeData = [
 		"county":"Clark",
 		"species":["Bluegill","Channel catfish","Crappie","Largemouth bass","Muskellunge","Redear sunfish"],
 		"latlon":"39.436800,-87.803847",
-		"area":""
+		"area":"EC"
 	},
 	{
 		"name":" MILLER PARK LAKE",
@@ -1084,7 +1084,7 @@ var LakeData = [
 		"county":"McLean",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"EC"
 	},
 	{
 		"name":" MILLIKEN, LAKE",
@@ -1092,7 +1092,7 @@ var LakeData = [
 		"county":"Will",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NE"
 	},
 	{
 		"name":" MINERAL SPRINGS PK LAGOON",
@@ -1100,7 +1100,7 @@ var LakeData = [
 		"county":"Tazewell",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NW"
 	},
 	{
 		"name":" MINGO, LAKE",
@@ -1108,7 +1108,7 @@ var LakeData = [
 		"county":"Vermilion",
 		"species":["Bluegill","Channel catfish","Crappie","Largemouth bass","Muskellunge","Redear sunfish"],
 		"latlon":"40.2124485,-87.7285944",
-		"area":""
+		"area":"EC"
 	},
 	{
 		"name":" MONEE RESERVOIR",
@@ -1116,7 +1116,7 @@ var LakeData = [
 		"county":"Will",
 		"species":["Black crappie","Bluegill","Channel catfish","Largemouth bass","Redear sunfish"],
 		"latlon":"41.3909605,-87.7614302",
-		"area":""
+		"area":"NE"
 	},
 	{
 		"name":" MT. OLIVE OLD CITY LAKE",
@@ -1124,7 +1124,7 @@ var LakeData = [
 		"county":"Macoupin",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"WC"
 	},
 	{
 		"name":" MT. PULASKI P.D. LAKE",
@@ -1132,7 +1132,7 @@ var LakeData = [
 		"county":"Logan",
 		"species":["Bluegill","Channel catfish","Largemouth bass","Redear sunfish"],
 		"latlon":"39.994782,-89.273957",
-		"area":""
+		"area":"WC"
 	},
 	{
 		"name":" MT. VERNON G.F. POND",
@@ -1140,7 +1140,7 @@ var LakeData = [
 		"county":"Jefferson",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"S"
 	},
 	{
 		"name":" MURPHYSBORO, LAKE",
@@ -1148,7 +1148,7 @@ var LakeData = [
 		"county":"Jackson",
 		"species":["Bluegill","Channel catfish","Crappie","Largemouth bass","Redear sunfish"],
 		"latlon":"37.780143,-89.3818303",
-		"area":""
+		"area":"S"
 	},
 	{
 		"name":" NEWTON LAKE",
@@ -1156,7 +1156,7 @@ var LakeData = [
 		"county":"Jasper",
 		"species":["Black crappie","Bluegill","Channel catfish","Largemouth bass","White bass"],
 		"latlon":"38.9191448,-88.2819237",
-		"area":""
+		"area":"S"
 	},
 	{
 		"name":" NORRIS CITY RESERVOIR",
@@ -1164,7 +1164,7 @@ var LakeData = [
 		"county":"White",
 		"species":["Bluegill","Channel catfish","Crappie","Largemouth bass"],
 		"latlon":"37.979536,-88.313486",
-		"area":""
+		"area":"S"
 	},
 	{
 		"name":" NORTH CHARTER OAK LAKE",
@@ -1172,7 +1172,7 @@ var LakeData = [
 		"county":"Peoria",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NW"
 	},
 	{
 		"name":" OAKLAND CITY LAKE",
@@ -1180,7 +1180,7 @@ var LakeData = [
 		"county":"Coles",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"EC"
 	},
 	{
 		"name":" OLSEN LAKE",
@@ -1188,7 +1188,7 @@ var LakeData = [
 		"county":"Winnebago",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NW"
 	},
 	{
 		"name":" OMAHA RESERVOIR",
@@ -1196,7 +1196,7 @@ var LakeData = [
 		"county":"Gallatin",
 		"species":["Bluegill","Channel catfish","Crappie","Largemouth bass"],
 		"latlon":"37.892308,-88.320422",
-		"area":""
+		"area":"S"
 	},
 	{
 		"name":" OMAHA TOWNSHIP CITY RESERVOIR",
@@ -1204,7 +1204,7 @@ var LakeData = [
 		"county":"Gallatin",
 		"species":["Bluegill","Channel catfish","Crappie","Largemouth bass"],
 		"latlon":"37.900346,-88.326243",
-		"area":""
+		"area":"S"
 	},
 	{
 		"name":" OPOSSUM POND - LSP",
@@ -1212,7 +1212,7 @@ var LakeData = [
 		"county":"Shelby",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"EC"
 	},
 	{
 		"name":" OTTER LAKE",
@@ -1220,7 +1220,7 @@ var LakeData = [
 		"county":"Macoupin",
 		"species":["Channel catfish","Crappie","Hybrid Striped Bass (Wiper)","Largemouth bass","Muskellunge"],
 		"latlon":"39.419030,-89.898739",
-		"area":""
+		"area":"WC"
 	},
 	{
 		"name":" PALMYRA-TERRY PARK POND",
@@ -1228,7 +1228,7 @@ var LakeData = [
 		"county":"Macoupin",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"WC"
 	},
 	{
 		"name":" PARADISE, LAKE",
@@ -1236,7 +1236,7 @@ var LakeData = [
 		"county":"Coles",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"EC"
 	},
 	{
 		"name":" PARIS EAST LAKE",
@@ -1244,7 +1244,7 @@ var LakeData = [
 		"county":"Edgar",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"EC"
 	},
 	{
 		"name":" PARIS WEST LAKE",
@@ -1252,7 +1252,7 @@ var LakeData = [
 		"county":"Edgar",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"EC"
 	},
 	{
 		"name":" PECATONICA RIVER",
@@ -1268,7 +1268,7 @@ var LakeData = [
 		"county":"Winnebago",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NW"
 	},
 	{
 		"name":" PINCKNEYVILLE CITY LAKE",
@@ -1276,7 +1276,7 @@ var LakeData = [
 		"county":"Perry",
 		"species":["Bluegill","Channel catfish","Crappie","Largemouth bass","Redear sunfish"],
 		"latlon":"38.102144,-89.401129",
-		"area":""
+		"area":"S"
 	},
 	{
 		"name":" PINE CREEK",
@@ -1292,7 +1292,7 @@ var LakeData = [
 		"county":"Pike",
 		"species":["Channel catfish","Crappie","Flathead catfish","Hybrid Striped Bass (Wiper)","Largemouth bass","Walleye"],
 		"latlon":"39.637903,-90.752308",
-		"area":""
+		"area":"WC"
 	},
 	{
 		"name":" POUNDS HOLLOW LAKE",
@@ -1300,7 +1300,7 @@ var LakeData = [
 		"county":"Hardin",
 		"species":["Black crappie","Bluegill","Channel catfish","Largemouth bass"],
 		"latlon":"",
-		"area":""
+		"area":"S"
 	},
 	{
 		"name":" POWDERHORN LAKE",
@@ -1308,23 +1308,23 @@ var LakeData = [
 		"county":"Cook",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NE"
 	},
 	{
 		"name":" POWERTON LAKE",
 		"href":"/profiles/display_lake.php?waternum=00039",
 		"county":"Tazewell",
 		"species":["Black crappie","Channel catfish","Hybrid Striped Bass (Wiper)","Largemouth bass","Smallmouth bass"],
-		"latlon":"",
-		"area":""
+		"latlon":"40.5479401,-89.7051206",
+		"area":"NW"
 	},
 	{
 		"name":" PRAIRIE LAKE (Site M)- JEPCSFWA",
 		"href":"/profiles/display_lake.php?waternum=04666",
 		"county":"Cass",
 		"species":["Black crappie","Bluegill","Channel catfish","Largemouth bass","Muskellunge","Redear sunfish","Smallmouth bass"],
-		"latlon":"",
-		"area":""
+		"latlon":"39.9849965,-90.0604572",
+		"area":"WC"
 	},
 	{
 		"name":" PRK - WILLOW LAKE",
@@ -1332,7 +1332,7 @@ var LakeData = [
 		"county":"St. Clair",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"WC"
 	},
 	{
 		"name":" PROSPECT PARK POND",
@@ -1340,63 +1340,63 @@ var LakeData = [
 		"county":"Rock Island",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NW"
 	},
 	{
 		"name":" PYRAMID-BLUE WING LAKE",
 		"href":"/profiles/display_lake.php?waternum=53037",
 		"county":"Perry",
 		"species":["Bluegill","Channel catfish","Crappie"],
-		"latlon":"",
-		"area":""
+		"latlon":"37.984773,-89.501661",
+		"area":"S"
 	},
 	{
 		"name":" PYRAMID-CANVASBACK LAKE",
 		"href":"/profiles/display_lake.php?waternum=53050",
 		"county":"Perry",
 		"species":["Bluegill","Channel catfish","Crappie","Muskellunge","Walleye"],
-		"latlon":"",
-		"area":""
+		"latlon":"37.993867,-89.508612",
+		"area":"S"
 	},
 	{
 		"name":" PYRAMID-GOLDENEYE LAKE",
 		"href":"/profiles/display_lake.php?waternum=53026",
 		"county":"Perry",
 		"species":["Black crappie","Bluegill","Channel catfish","Muskellunge","Redear sunfish"],
-		"latlon":"",
-		"area":""
+		"latlon":"38.031349,-89.468709",
+		"area":"S"
 	},
 	{
 		"name":" PYRAMID-GREEN WING LAKE",
 		"href":"/profiles/display_lake.php?waternum=53033",
 		"county":"Perry",
 		"species":["Bluegill","Channel catfish","Crappie","Walleye"],
-		"latlon":"",
-		"area":""
+		"latlon":"37.993632,-89.534648",
+		"area":"S"
 	},
 	{
 		"name":" PYRAMID-MALLARD LAKE",
 		"href":"/profiles/display_lake.php?waternum=53049",
 		"county":"Perry",
 		"species":["Bluegill","Crappie"],
-		"latlon":"",
-		"area":""
+		"latlon":"37.991669,-89.495529",
+		"area":"S"
 	},
 	{
 		"name":" PYRAMID-MERGANSER LAKE",
 		"href":"/profiles/display_lake.php?waternum=53029",
 		"county":"Perry",
 		"species":["Channel catfish","Crappie"],
-		"latlon":"",
-		"area":""
+		"latlon":"38.021703,-89.569415",
+		"area":"S"
 	},
 	{
 		"name":" PYRAMID-SUPER LAKE",
 		"href":"/profiles/display_lake.php?waternum=53044",
 		"county":"Perry",
 		"species":["Bluegill","Channel catfish","Crappie"],
-		"latlon":"",
-		"area":""
+		"latlon":"38.015536,-89.499684",
+		"area":"S"
 	},
 	{
 		"name":" RACCOON LAKE",
@@ -1404,7 +1404,7 @@ var LakeData = [
 		"county":"Marion",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"S"
 	},
 	{
 		"name":" RAMSEY LAKE",
@@ -1412,15 +1412,15 @@ var LakeData = [
 		"county":"Fayette",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"S"
 	},
 	{
 		"name":" RANDOLPH COUNTY LAKE",
 		"href":"/profiles/display_lake.php?waternum=00292",
 		"county":"Randolph",
 		"species":["Bluegill","Channel catfish","Largemouth bass","Redear sunfish"],
-		"latlon":"",
-		"area":""
+		"latlon":"37.9759067,-89.7986341",
+		"area":"WC"
 	},
 	{
 		"name":" RED HILLS LAKE",
@@ -1428,15 +1428,15 @@ var LakeData = [
 		"county":"Lawrence",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"S"
 	},
 	{
 		"name":" REND LAKE",
 		"href":"/profiles/display_lake.php?waternum=00281",
 		"county":"Franklin",
 		"species":["Bluegill","Channel catfish","Crappie","Flathead catfish","Hybrid Striped Bass (Wiper)","Largemouth bass","White bass"],
-		"latlon":"",
-		"area":""
+		"latlon":"38.1114398,-88.949682",
+		"area":"S"
 	},
 	{
 		"name":" RIDGE LAKE - FRSP",
@@ -1444,7 +1444,7 @@ var LakeData = [
 		"county":"Coles",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"EC"
 	},
 	{
 		"name":" ROCK RIVER",
@@ -1460,7 +1460,7 @@ var LakeData = [
 		"county":"Macon",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"EC"
 	},
 	{
 		"name":" ROCK SPRINGS POND (MCCD)",
@@ -1468,47 +1468,47 @@ var LakeData = [
 		"county":"Macon",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"EC"
 	},
 	{
 		"name":" ROODHOUSE PARK LAKE",
 		"href":"/profiles/display_lake.php?waternum=00190",
 		"county":"Greene",
 		"species":["","Bluegill","Channel catfish","Largemouth bass"],
-		"latlon":"",
-		"area":""
+		"latlon":"39.4648709,-90.365388",
+		"area":"WC"
 	},
 	{
 		"name":" RV LAKE W.S.C.",
 		"href":"/profiles/display_lake.php?waternum=40000",
 		"county":"Randolph",
 		"species":["Bluegill","Crappie","Largemouth bass"],
-		"latlon":"",
-		"area":""
+		"latlon":"38.1836292,-89.725071",
+		"area":"WC"
 	},
 	{
 		"name":" SAHARA LAKE",
 		"href":"/profiles/display_lake.php?waternum=52500",
 		"county":"Saline",
 		"species":["Bluegill","Channel catfish","Crappie","Largemouth bass"],
-		"latlon":"",
-		"area":""
+		"latlon":"37.725375,-88.675643",
+		"area":"S"
 	},
 	{
 		"name":" SAM DALE LAKE",
 		"href":"/profiles/display_lake.php?waternum=00236",
 		"county":"Wayne",
 		"species":["Bluegill","Channel catfish","Largemouth bass","Muskellunge","Redear sunfish","White crappie"],
-		"latlon":"",
-		"area":""
+		"latlon":"38.5414767,-88.5837063",
+		"area":"S"
 	},
 	{
 		"name":" SAM PARR LAKE",
 		"href":"/profiles/display_lake.php?waternum=00222",
 		"county":"Jasper",
 		"species":["Bluegill","Channel catfish","Crappie","Largemouth bass"],
-		"latlon":"",
-		"area":""
+		"latlon":"39.0226102,-88.1200346",
+		"area":"S"
 	},
 	{
 		"name":" SAND LAKE",
@@ -1516,39 +1516,39 @@ var LakeData = [
 		"county":"Lake",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NE"
 	},
 	{
 		"name":" SANGCHRIS, LAKE",
 		"href":"/profiles/display_lake.php?waternum=00168",
 		"county":"Christian",
 		"species":["Channel catfish","Crappie","Flathead catfish","Largemouth bass","Striped bass"],
-		"latlon":"",
-		"area":""
+		"latlon":"39.6014657,-89.4806624",
+		"area":"WC"
 	},
 	{
 		"name":" SARA, LAKE",
 		"href":"/profiles/display_lake.php?waternum=00221",
 		"county":"Effingham",
 		"species":["Bluegill","Channel catfish","Crappie","Largemouth bass"],
-		"latlon":"",
-		"area":""
+		"latlon":"39.1381438,-88.6393121",
+		"area":"S"
 	},
 	{
 		"name":" SCHUY-RUSH LAKE",
 		"href":"/profiles/display_lake.php?waternum=00450",
 		"county":"Schuyler",
 		"species":["Bluegill","Channel catfish","Crappie","Largemouth bass"],
-		"latlon":"",
-		"area":""
+		"latlon":"40.0805736,-90.5486374",
+		"area":"WC"
 	},
 	{
 		"name":" SESSER CITY RESERVOIR",
 		"href":"/profiles/display_lake.php?waternum=04860",
 		"county":"Franklin",
 		"species":["Bluegill","Channel catfish","Crappie","Largemouth bass","Redear sunfish"],
-		"latlon":"",
-		"area":""
+		"latlon":"38.0705901,-89.03601",
+		"area":"S"
 	},
 	{
 		"name":" SHABBONA LAKE",
@@ -1556,15 +1556,15 @@ var LakeData = [
 		"county":"DeKalb",
 		"species":["Bluegill","Channel catfish","Crappie","Hybrid Striped Bass (Wiper)","Largemouth bass","Muskellunge","Walleye"],
 		"latlon":"41.746400,-88.858733",
-		"area":""
+		"area":"NW"
 	},
 	{
 		"name":" SHELBYVILLE, LAKE",
 		"href":"/profiles/display_lake.php?waternum=00272",
 		"county":"Shelby",
 		"species":["Bigmouth buffalo","Bluegill","Channel catfish","Common carp","Crappie","Flathead catfish","Freshwater drum","Largemouth bass","Muskellunge","Sauger","Smallmouth bass","Walleye","White bass","Yellow bass"],
-		"latlon":"",
-		"area":""
+		"latlon":"39.5129309,-88.7084842",
+		"area":"EC"
 	},
 	{
 		"name":" SHOVEL LAKE-BANNER MARSH",
@@ -1572,23 +1572,23 @@ var LakeData = [
 		"county":"Fulton",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NW"
 	},
 	{
 		"name":" SILOAM SPRINGS (AKA CRAB APPLE)",
 		"href":"/profiles/display_lake.php?waternum=00161",
 		"county":"Adams",
 		"species":["Bluegill","Channel catfish","Crappie","Largemouth bass","Rainbow trout"],
-		"latlon":"",
-		"area":""
+		"latlon":"39.8828348,-90.9395657",
+		"area":"WC"
 	},
 	{
 		"name":" SILVER LAKE (HIGHLAND)",
 		"href":"/profiles/display_lake.php?waternum=00191",
 		"county":"Madison",
 		"species":["Bluegill","Channel catfish","Crappie","Largemouth bass","Redear sunfish","Sauger"],
-		"latlon":"",
-		"area":""
+		"latlon":"38.7770004,-89.6992493",
+		"area":"WC"
 	},
 	{
 		"name":" SILVER LAKE - DUPAGE CO.",
@@ -1596,15 +1596,15 @@ var LakeData = [
 		"county":"DuPage",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NE"
 	},
 	{
 		"name":" SKOKIE LAGOONS WATERSHED",
 		"href":"/profiles/display_lake.php?waternum=00170",
 		"county":"Lake",
 		"species":["Bluegill","Channel catfish","Crappie","Largemouth bass","Northern pike","Walleye"],
-		"latlon":"",
-		"area":""
+		"latlon":"42.1236904,-87.774386",
+		"area":"NE"
 	},
 	{
 		"name":" SPRING GROVE REARING AREA",
@@ -1612,23 +1612,23 @@ var LakeData = [
 		"county":"McHenry",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NE"
 	},
 	{
 		"name":" SPRING LAKE (NORTH)",
 		"href":"/profiles/display_lake.php?waternum=00040",
 		"county":"Tazewell",
 		"species":["Channel catfish","Crappie","Largemouth bass","Muskellunge"],
-		"latlon":"",
-		"area":""
+		"latlon":"40.471617,-89.858397",
+		"area":"NW"
 	},
 	{
 		"name":" SPRING LAKE (SOUTH)",
 		"href":"/profiles/display_lake.php?waternum=00465",
 		"county":"Tazewell",
 		"species":["Largemouth bass","Northern pike"],
-		"latlon":"",
-		"area":""
+		"latlon":"40.4643397,-89.8716456",
+		"area":"NW"
 	},
 	{
 		"name":" SPRINGFIELD PARK DIST. PONDS",
@@ -1636,15 +1636,15 @@ var LakeData = [
 		"county":"Sangamon",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"WC"
 	},
 	{
 		"name":" SPRINGFIELD, LAKE",
 		"href":"/profiles/display_lake.php?waternum=00172",
 		"county":"Sangamon",
 		"species":["Black crappie","Bluegill","Channel catfish","Crappie","Flathead catfish","Largemouth bass","Sauger","White bass"],
-		"latlon":"",
-		"area":""
+		"latlon":"39.706388,-89.604341",
+		"area":"WC"
 	},
 	{
 		"name":" STAUNTON CITY LAKE",
@@ -1652,15 +1652,15 @@ var LakeData = [
 		"county":"Macoupin",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"WC"
 	},
 	{
 		"name":" STERLING LAKE (LCFPD)",
 		"href":"/profiles/display_lake.php?waternum=00555",
 		"county":"Lake",
 		"species":["Black crappie","Bluegill","Channel catfish","Largemouth bass","Muskellunge","Walleye"],
-		"latlon":"",
-		"area":""
+		"latlon":"42.4766747,-87.9397024",
+		"area":"NE"
 	},
 	{
 		"name":" STOREY, LAKE",
@@ -1668,7 +1668,7 @@ var LakeData = [
 		"county":"Knox",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NW"
 	},
 	{
 		"name":" SUGAR CREEK LAKE",
@@ -1676,7 +1676,7 @@ var LakeData = [
 		"county":"Pope",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"S"
 	},
 	{
 		"name":" SULE, LAKE",
@@ -1684,7 +1684,7 @@ var LakeData = [
 		"county":"Ogle",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NW"
 	},
 	{
 		"name":" SUNSET LAKE - CCFPD",
@@ -1692,7 +1692,7 @@ var LakeData = [
 		"county":"Champaign",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"EC"
 	},
 	{
 		"name":" TAMPIER (CCFPD), LAKE",
@@ -1700,7 +1700,7 @@ var LakeData = [
 		"county":"Cook",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NE"
 	},
 	{
 		"name":" TAYLORVILLE PARK DISTRICT POND",
@@ -1708,15 +1708,15 @@ var LakeData = [
 		"county":"Christian",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"WC"
 	},
 	{
 		"name":" TAYLORVILLE, LAKE",
 		"href":"/profiles/display_lake.php?waternum=04600",
 		"county":"Christian",
 		"species":["Bluegill","Channel catfish","Largemouth bass","Sauger","White crappie"],
-		"latlon":"",
-		"area":""
+		"latlon":"39.487725,-89.253821",
+		"area":"WC"
 	},
 	{
 		"name":" TEAL LAKE-SNAKEDEN HOLLOW",
@@ -1724,23 +1724,23 @@ var LakeData = [
 		"county":"Knox",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NW"
 	},
 	{
 		"name":" TECUMSEH LAKE",
 		"href":"/profiles/display_lake.php?waternum=00245",
 		"county":"Hardin",
 		"species":["Bluegill","Channel catfish","Crappie","Largemouth bass"],
-		"latlon":"",
-		"area":""
+		"latlon":"37.483056,-88.325909",
+		"area":"S"
 	},
 	{
 		"name":" TEN MILE CREEK FWA",
 		"href":"/profiles/display_lake.php?waternum=04801",
 		"county":"Hamilton",
 		"species":["Bluegill","Channel catfish","Crappie","Largemouth bass"],
-		"latlon":"",
-		"area":""
+		"latlon":"38.208683,-88.762092",
+		"area":"S"
 	},
 	{
 		"name":" THOMPSON/FLAG LAKE",
@@ -1748,7 +1748,7 @@ var LakeData = [
 		"county":"Fulton",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NW"
 	},
 	{
 		"name":" TOLEDO, LAKE",
@@ -1756,7 +1756,7 @@ var LakeData = [
 		"county":"Cumberland",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"EC"
 	},
 	{
 		"name":" TURNER LAKE - COLSP",
@@ -1764,7 +1764,7 @@ var LakeData = [
 		"county":"Lake",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NE"
 	},
 	{
 		"name":" TUSCOLA CITY LAKE",
@@ -1772,7 +1772,7 @@ var LakeData = [
 		"county":"Douglas",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"EC"
 	},
 	{
 		"name":" VANDALIA LAKE",
@@ -1780,7 +1780,7 @@ var LakeData = [
 		"county":"Fayette",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"S"
 	},
 	{
 		"name":" VANHORN WOODS POND",
@@ -1788,15 +1788,15 @@ var LakeData = [
 		"county":"Will",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NE"
 	},
 	{
 		"name":" VERMILION, LAKE",
 		"href":"/profiles/display_lake.php?waternum=00113",
 		"county":"Vermilion",
 		"species":["Bluegill","Channel catfish","Largemouth bass","White crappie"],
-		"latlon":"",
-		"area":""
+		"latlon":"40.1718305,-87.6467519",
+		"area":"EC"
 	},
 	{
 		"name":" VICTORIA, LAKE",
@@ -1804,7 +1804,7 @@ var LakeData = [
 		"county":"Winnebago",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NW"
 	},
 	{
 		"name":" VILLA GROVE WEST LAKE",
@@ -1812,7 +1812,7 @@ var LakeData = [
 		"county":"Douglas",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"EC"
 	},
 	{
 		"name":" VIRGINIA CITY RESERVOIR",
@@ -1820,23 +1820,23 @@ var LakeData = [
 		"county":"Cass",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"WC"
 	},
 	{
 		"name":" W. FRANKFORT NEW CITY",
 		"href":"/profiles/display_lake.php?waternum=01651",
 		"county":"Franklin",
 		"species":["Bluegill","Channel catfish","Crappie","Largemouth bass"],
-		"latlon":"",
-		"area":""
+		"latlon":"37.904885,-88.797089",
+		"area":"S"
 	},
 	{
 		"name":" W. FRANKFORT OLD CITY",
 		"href":"/profiles/display_lake.php?waternum=01652",
 		"county":"Franklin",
 		"species":["Bluegill","Channel catfish","Crappie","Largemouth bass"],
-		"latlon":"",
-		"area":""
+		"latlon":"37.890526,-88.810522",
+		"area":"S"
 	},
 	{
 		"name":" WALNUT POINT LAKE",
@@ -1844,15 +1844,15 @@ var LakeData = [
 		"county":"Douglas",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"EC"
 	},
 	{
 		"name":" WASHINGTON COUNTY LAKE",
 		"href":"/profiles/display_lake.php?waternum=00197",
 		"county":"Washington",
 		"species":["Bluegill","Channel catfish","Largemouth bass"],
-		"latlon":"",
-		"area":""
+		"latlon":"38.271651,-89.356617",
+		"area":"WC"
 	},
 	{
 		"name":" WASHINGTON PARK LAKE - BOWEN",
@@ -1860,7 +1860,7 @@ var LakeData = [
 		"county":"Tazewell",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NW"
 	},
 	{
 		"name":" WASHINGTON PARK POND",
@@ -1868,7 +1868,7 @@ var LakeData = [
 		"county":"Sangamon",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"WC"
 	},
 	{
 		"name":" WEINBERG KING POND #2",
@@ -1876,23 +1876,23 @@ var LakeData = [
 		"county":"Schuyler",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"WC"
 	},
 	{
 		"name":" WELDON SPRINGS LAKE",
 		"href":"/profiles/display_lake.php?waternum=00093",
 		"county":"DeWitt",
 		"species":["Black crappie","Bluegill","Channel catfish","Largemouth bass","Redear sunfish"],
-		"latlon":"",
-		"area":""
+		"latlon":"40.121957,-88.923450",
+		"area":"EC"
 	},
 	{
 		"name":" WHALON LAKE",
 		"href":"/profiles/display_lake.php?waternum=20092",
 		"county":"Will",
 		"species":["Black crappie","Bluegill","Channel catfish","Largemouth bass","Smallmouth bass","Walleye"],
-		"latlon":"",
-		"area":""
+		"latlon":"41.715847,-88.092543",
+		"area":"NE"
 	},
 	{
 		"name":" WHEEL LAKE-BANNER MARSH",
@@ -1900,7 +1900,7 @@ var LakeData = [
 		"county":"Peoria",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"NW"
 	},
 	{
 		"name":" WHITE HALL CITY LAKE",
@@ -1908,7 +1908,7 @@ var LakeData = [
 		"county":"Greene",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"WC"
 	},
 	{
 		"name":" WHITE OAK PARK LAKE",
@@ -1916,23 +1916,23 @@ var LakeData = [
 		"county":"McLean",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"EC"
 	},
 	{
 		"name":" WILLIAMSVILLE, LAKE",
 		"href":"/profiles/display_lake.php?waternum=00174",
 		"county":"Sangamon",
 		"species":["Bluegill","Channel catfish","Largemouth bass"],
-		"latlon":"",
-		"area":""
+		"latlon":"39.950948,-89.531090",
+		"area":"WC"
 	},
 	{
 		"name":" WOLF LAKE",
 		"href":"/profiles/display_lake.php?waternum=00084",
 		"county":"Cook",
 		"species":["Black crappie","Bluegill","Channel catfish","Largemouth bass","Northern pike"],
-		"latlon":"",
-		"area":""
+		"latlon":"41.675376,-87.516073",
+		"area":"NE"
 	},
 	{
 		"name":" WYMAN LAKE",
@@ -1940,6 +1940,6 @@ var LakeData = [
 		"county":"Moultrie",
 		"species":[],
 		"latlon":"",
-		"area":""
+		"area":"EC"
 	}
 ];

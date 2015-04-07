@@ -7,14 +7,14 @@
 */
 .mapView {
 	width: 100vw;
-	height: calc(100vh - 130px);
+	height: calc(100vh - 84px);
 	display: block;
 }
 
 .lakes-scrollable {
 	padding-left: 0px;
 	overflow-y: scroll;
-	max-height: calc(100vh - 110px);
+	max-height: calc(100vh - 140px);
 }
 .lakes-item {
   position: relative;
@@ -34,6 +34,12 @@
   border-bottom: 2px solid #eee;
 }
 
+.vcenter {
+	display: inline-block;
+	vertical-align: middle;
+	float: none;
+}
+
 html, body {
   height: 100%;
 }
@@ -42,6 +48,7 @@ body {
   padding: 50px 0 0 0;
 }
 */
+/*
 .navmenu {
   padding-top: 50px;
 }
@@ -59,12 +66,13 @@ body {
   float: left;
   margin-left: 15px;
 }
-
+*/
 .container {
   max-width: 100%;
   max-height: 100vh;
 }
 
+/*
 @media (min-width: 1px) {
   .navbar-toggle {
     display: block !important;
@@ -79,6 +87,7 @@ body {
     padding-top: 0;
   }
   .navbar {
-    display: none !important; /* IE8 fix */
+    display: none !important; /* IE8 fix
   }
 }
+*/

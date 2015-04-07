@@ -12,9 +12,9 @@ var ViewModel = function() {
 
 	self.areaFilters = ko.observable({
 		NW: ko.observable(false),
-		NE: ko.observable(false),
+		NE: ko.observable(true),
 		WC: ko.observable(false),
-		EC: ko.observable(true),
+		EC: ko.observable(false),
 		S: ko.observable(false)
 	});
 
@@ -60,10 +60,38 @@ var ViewModel = function() {
 			aLake.species.forEach(function(aSpecies) {
 				info.species.push(aSpecies);
 			});
-//Add filtering here -->
+			self.buildMarker(info);
 			self.lakes.push(info);
 		});
 	};
+	
+	self.buildMarker = function(info) {
+		var fishSymbol = {
+						path: "M 0 5 C 5 0 5 0 20 10 C 17 5 17 5 20 0 C 5 10 5 10 0 5 z",
+						fillColor: 'green',
+						fillOpacity: 0.5
+						};
+		if (0 < info.latlon().length) {
+			var nums = info.latlon().split(",");
+			var ll = new google.maps.LatLng(nums[0], nums[1]);
+			var marker = new google.maps.Marker({
+				map: null,
+				position: ll,
+				title: info.name(),
+				icon: fishSymbol
+			});
+			info.marker(marker);
+			google.maps.event.addListener(marker, 'click', function() {
+				self.setCurrentLake(info);
+				self.displayInfo(self.map);
+				// var iwContent = "<div>" + info.name() + ", " + info.county() + " county</div>";
+				// iwContent = iwContent + "<a href='http://www.ifishillinois.org"+info.href()+"'>lake report at ifishillinois.org</a>"; 
+				// self.infoWindow.setContent(iwContent);
+				// self.infoWindow.open(map, marker);
+			});
+		};
+	};
+	
 	self.loadMapApi = function() {
 		var script = document.createElement('script');
 		script.type = 'text/javascript';
@@ -71,46 +99,65 @@ var ViewModel = function() {
 			'&callback=showMap'; //&signed_in=true
 		document.body.appendChild(script);
 	};
-	
 
+
+	self.removeMapMarkers = function() {
+		self.lakes().forEach(function(aLake) {
+			if (aLake.marker()) {
+				aLake.marker().setMap(null);
+			}
+		});
+	};
 
 	self.addMapMarkers = function() {
-		var fishSymbol = {
-						path: "M 0 5 C 5 0 5 0 20 10 C 17 5 17 5 20 0 C 5 10 5 10 0 5 z",
-						fillColor: 'green',
-						fillOpacity: 0.5
-						};
+		// var fishSymbol = {
+						// path: "M 0 5 C 5 0 5 0 20 10 C 17 5 17 5 20 0 C 5 10 5 10 0 5 z",
+						// fillColor: 'green',
+						// fillOpacity: 0.5
+						// };
 		var bounds = new google.maps.LatLngBounds();
 		bounds.extend(self.map.getCenter());
-		self.lakes().forEach(function(info) {
-			if (0 < info.latlon().length) {
-//Add filtering here -->
-				var nums = info.latlon().split(",");
-				var ll = new google.maps.LatLng(nums[0], nums[1]);
-				var marker = new google.maps.Marker({
-					map: self.map,
-					position: ll,
-					title: info.name(),
-					icon: fishSymbol
-				});
-				info.marker(marker);
-				bounds.extend(ll);
-				google.maps.event.addListener(marker, 'click', function() {
-					self.setCurrentLake(info);
-					self.displayInfo(self.map);
+		self.filteredLakes().forEach(function(info) {
+			if (typeof info.marker() !== "undefined") {
+				// var nums = info.latlon().split(",");
+				// var ll = new google.maps.LatLng(nums[0], nums[1]);
+				// var marker = new google.maps.Marker({
+					// map: self.map,
+					// position: ll,
+					// title: info.name(),
+					// icon: fishSymbol
+				// });
+				info.marker().setMap(self.map);
+				// info.marker(marker);
+				bounds.extend(info.marker().getPosition());
+				// google.maps.event.addListener(marker, 'click', function() {
+					// self.setCurrentLake(info);
+					// self.displayInfo(self.map);
 					// var iwContent = "<div>" + info.name() + ", " + info.county() + " county</div>";
 					// iwContent = iwContent + "<a href='http://www.ifishillinois.org"+info.href()+"'>lake report at ifishillinois.org</a>"; 
 					// self.infoWindow.setContent(iwContent);
 					// self.infoWindow.open(map, marker);
-				});
+				// });
 			};
 		});
 		self.map.fitBounds(bounds);
 		// var iwc = '<div data-bind="with: currentLake"><div data-bind="text: place"></div><div>Ta Da!</div></div>';
-		self.infoWindow = new google.maps.InfoWindow({
-			content: $('#lakeDetails').html()
+	};
+
+	self.wireUpMapMarkers = function() {
+		self.filteredLakes.subscribe(function(newList) {
+			self.removeMapMarkers();
+			self.addMapMarkers();
 		});
 	};
+	
+	self.init = function() {
+		viewModel.wireUpMapMarkers();
+		viewModel.loadLakeData();
+		viewModel.setupFiltersMenu();
+	};
+
+
 	self.displayInfo = function() {
 //		var iwc = '<div data-bind="with: currentLake"><div data-bind="text: place"></div><div>Ta Da!</div></div>';
 		// var iwContent = "<div>" + info.name() + ", " + info.county() + " county</div>";
@@ -120,6 +167,7 @@ var ViewModel = function() {
 console.log("NW:"+self.areaFilters()["NW"]()+",NE:"+self.areaFilters()["NE"]()+",WC:"+
 	self.areaFilters()["WC"]()+",EC:"+self.areaFilters()["EC"]()+",S:"+self.areaFilters()["S"]());
 	};
+
 	self.setupFiltersMenu = function() {
 		$('#filtersMenu .dropdown-menu li').on({
 			"click":function(e){
@@ -140,7 +188,13 @@ function showMap() {
 	// console.log("mapctr:"+map.getCenter());
 	// console.log("mapzoom:"+map.getZoom());
 // console.log("showMap-map-bounds:"+map.getBounds());
-	viewModel.addMapMarkers();
+	// viewModel.addMapMarkers();
+
+	viewModel.infoWindow = new google.maps.InfoWindow({
+		content: $('#lakeDetails').html()
+	});
+	
+	viewModel.init();
 };
 
 var viewModel;
@@ -156,7 +210,5 @@ $(document).ready(function() {
 		// console.log("button clicked... jsonify the lakes data...");
 		// viewModel.dump();
 	// });
-	viewModel.loadLakeData();
 	viewModel.loadMapApi();
-	viewModel.setupFiltersMenu();
 });

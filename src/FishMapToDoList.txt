@@ -1,16 +1,10 @@
 Current:
 --------
-Area filters. Got 'em checking and unchecking in the dropdown.
-Got the lakes list to repopulate.
-Now, I need the markers to repopulate.
+in the lake list, turn grey - no species, or no latlon
+marker - if no species, turn marker grey
+add rivers "area"
 
-Maybe I need a lakes list, and a visible lakes list...
-Or... can I filter them as they're added to the menu and the markers?
-Or... Could I set them as hidden in the list? and removed from the map?
-This last idea might just be the best... If it works.
-Currently, viewModel.lakes is observable directly by the binding in the html.
-Is there a way to compute the observable? Or something like that?
-keep it simple: use two arrays, one of all the lakes, the other of the visible lakes based on the filters. When the filters change, use removeAll, and then push the visible ones back into the array. ANd look at setting the rateLimit on the observableArray so it doesn't repaint on every push.
+
 
 ToDos:
 ------
@@ -18,7 +12,6 @@ Learn more about Bower - how to keep components up to date
 Learn more about Bower - how to use src/dev/dist
 search function - real time, by name
 filter function - pick one or more species
-filter function - area - nw, ne, ec, wc, s
 filter function - other criteria?
 gulp - build script
 integrate bootstrap
@@ -37,6 +30,7 @@ local storage
 In the infoWindow, make each species name a link to the wikipedia article on that species. Or to a corresponding page at iFishIllinois.
 something else
 
+
 Finished:
 ---------
 LakeScraper proof of concept
@@ -50,6 +44,12 @@ Store info locally
 Set up the map
 Add pins to the map
 change pin to a fish symbol
+Area filters. Got 'em checking and unchecking in the dropdown.
+Got the lakes list to repopulate.
+Got the markers to repopulate.
+fixed - markers don't populate on startup
+filter function - area - nw, ne, ec, wc, s
+
 
 Development log:
 ----------------
@@ -63,3 +63,12 @@ Also, unfortunately, not all lakes listed have species lists.
 Found another list at: http://itouchmap.com/?f=lake&s=IL which lists 860 lakes in Il. But doesn't give fishing info...
 Fought with ko.computed() for a while... It's touchy... If you update your observableArray without using a ko function (IE: myOA()[myOA().length] = blah) then you won't get the dependencies to trigger. But if you use the ko ".push" instead, it works (IE: myOA.push(blah)).
 rewrote it to load from a locally sourced JSON object rather than the scraper. This will make it possible to splice in latlon values, and pin the lakes up on the map.
+Notes on map markers:
+	Maybe I need a lakes list, and a visible lakes list...
+	Or... can I filter them as they're added to the menu and the markers?
+	Or... Could I set them as hidden in the list? and removed from the map?
+	This last idea might just be the best... If it works.
+	Currently, viewModel.lakes is observable directly by the binding in the html.
+	Is there a way to compute the observable? Or something like that?
+	keep it simple: use two arrays, one of all the lakes, the other of the visible lakes based on the filters. When the filters change, use removeAll, and then push the visible ones back into the array. ANd look at setting the rateLimit on the observableArray so it doesn't repaint on every push.
+
