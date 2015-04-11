@@ -90,6 +90,9 @@
 			<p>Species:<ul data-bind="foreach: species">
 				<li data-bind="text: $data"></li>
 			</ul>
+			<div data-bind="foreach: flickrThumbs">
+				<img data-bind="attr: {src: pic, height: height, width: width}" alt="missing thumb"></img>
+			</div>
 		</div>
 	</span>
 	<!--button>Dump</button-->

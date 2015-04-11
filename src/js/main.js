@@ -209,13 +209,8 @@ var ViewModel = function() {
 
 
 	self.displayInfo = function() {
-//		var iwc = '<div data-bind="with: currentLake"><div data-bind="text: place"></div><div>Ta Da!</div></div>';
-		// var iwContent = "<div>" + info.name() + ", " + info.county() + " county</div>";
-		// iwContent = iwContent + "<a href='http://www.ifishillinois.org"+info.href()+"'>lake report at ifishillinois.org</a>"; 
 		self.infoWindow.setContent($('#lakeDetails').html());
 		self.infoWindow.open(self.map, self.currentLake().marker());
-console.log("NW:"+self.areaFilters()["NW"]()+",NE:"+self.areaFilters()["NE"]()+",WC:"+
-	self.areaFilters()["WC"]()+",EC:"+self.areaFilters()["EC"]()+",S:"+self.areaFilters()["S"]());
 	};
 
 	self.setupFiltersMenu = function() {

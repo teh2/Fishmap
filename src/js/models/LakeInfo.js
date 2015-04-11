@@ -19,4 +19,39 @@ var LakeInfo = function(nm, ref) {
 	this.iFishLink = ko.computed(function() {
 		return "<a href='http://www.ifishillinois.org"+self.href()+"'>lake report at ifishillinois.org</a>";
 	});
+	this.flickrThumbs = ko.pureComputed(function() {
+		var thumbs = [
+			{
+				pic: "images/Largemouth bass 1.jpg",
+				height: "77",
+				width: "51"
+			},
+			{
+				pic:"images/Smallmouth bass.jpg",
+				height:"77",
+				width:"51"
+			},
+			{
+				pic:"images/Largemouth bass 2.jpg",
+				height:"77",
+				width:"51"
+			},
+			{
+				pic:"images/Muskie 1.jpg",
+				height:"51",
+				width:"77"
+			},
+			{
+				pic:"images/Muskie 2.jpg",
+				height:"51",
+				width:"77"
+			},
+			{
+				pic:"images/Walleye.jpg",
+				height:"51",
+				width:"77"
+			}
+		];
+		return thumbs;
+	});
 }

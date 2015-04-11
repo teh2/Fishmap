@@ -17,8 +17,8 @@ make it responsive
 test it in a phone browser
 Add sort criteria to species dropdown (alpha, frequency, threshold)
 add API calls - fishing reports
-add API calls - pics, pintrest, flickr, ???
-add API calls - wikipedia articles
+add API calls - pics, pintrest, flickr, picasa, panoramia, instagram
+add API calls - wikipedia articles - link from species name in popup window?
 Does the trib have an API?
 Maybe the Herald?
 add lat/lon (to lakes with no species)
