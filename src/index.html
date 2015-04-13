@@ -91,7 +91,9 @@
 				<li data-bind="text: $data"></li>
 			</ul>
 			<div data-bind="foreach: flickrThumbs">
-				<img data-bind="attr: {src: pic, height: height, width: width}" alt="missing thumb"></img>
+				<a data-bind="attr: {href: linkBack}" target="_blank">
+					<img data-bind="attr: {src: pic, height: height, width: width}" alt="missing thumb"></img>
+				</a>
 			</div>
 		</div>
 	</span>
