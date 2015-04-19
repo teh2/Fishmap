@@ -1,0 +1,1 @@
+var LakeInfoVM = function() {	var self = this;	this.currentLake = ko.observable();};

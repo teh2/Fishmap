@@ -14,7 +14,7 @@
   </head>
   <body>
 	<div class="container-fluid">
-	<div class="row fishmap-header">
+	<div id ="fishmap-header" class="row">
     <header> <!--  class="fishmap-header" navbar navbar-default navbar-fixed-top hidden-md hidden-lg -->
       <button type="button" class="col-xs-1 btn vcenter hidden-sm hidden-md hidden-lg" data-toggle="offcanvas"> <!--   data-target=".navmenu" -->Lakes</button>
 	  <h1 class="col-xs-10 col-sm-12 text-center vcenter">FishMap</h1>
@@ -55,12 +55,14 @@
 		</div>
         </ul>
 	</div>
-      <ul class="nav lakes-scrollable listView" data-bind="foreach: filteredLakes">
-		<li class="lakes-item" data-bind="text: displayName, click: $parent.setCurrentLake"></li>
-      </ul>
+		<div id="lakeList">
+			<ul class="nav lakes-scrollable listView" data-bind="foreach: filteredLakes">
+				<li class="lakes-item" data-bind="text: displayName, click: $parent.setCurrentLake"></li>
+			</ul>
+		</div>
     </div>
 	<div class="col-xs-12 col-sm-9">
-		<div class="mapView"> <!--  style="width: 500px; height: 500px; display: block" -->
+		<div id="mapView"> <!--  style="width: 500px; height: 500px; display: block" -->
 			Map
 		</div>
 		<!--div class="statusBar">
@@ -84,18 +86,27 @@
 		without putting it in the actual html, it won't get parsed by knockout
 		and our bindings won't be translated. -->
 	<span id ="lakeDetails" style="display: none">
-		<div data-bind="with: currentLake">
+		<div id = "lakeInfo" data-bind="with: currentLake">
 			<div data-bind="text: place"></div>
 			<div data-bind="html: iFishLink"></div>
-			<p>Species:<ul data-bind="foreach: species">
-				<li data-bind="text: $data"></li>
-			</ul>
-			<div data-bind="foreach: flickrThumbs">
-				<a data-bind="attr: {href: linkBack}" target="_blank">
-					<img data-bind="attr: {src: pic, height: height, width: width}" alt="missing thumb"></img>
-				</a>
+			<div id = "speciesList">
+				<p>Species:<ul data-bind="foreach: species">
+					<li data-bind="text: $data"></li>
+				</ul>
 			</div>
 		</div>
+			<div id="flickrPics">
+				<div data-bind="foreach: flickrThumbs">
+					<a data-bind="attr: {href: linkBack}" target="_blank">
+						<img data-bind="attr: {src: pic, height: height, width: width}" alt="missing thumb"></img>
+					</a>
+				</div>
+				<div data-bind="text: flickrAttrib"></div>
+			</div>
+			<div id="panoramioPics">
+			</div>
+			<!--div id="panoramioAttr" data-bind="text: panoramioAttrib">
+			</div-->
 	</span>
 	<!--button>Dump</button-->
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -107,6 +118,8 @@
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-XXXXX-X');ga('send','pageview');
     </script-->
+	
+	<script type="text/javascript" src="http://www.panoramio.com/wapi/wapi.js?v=1"></script>
 
 	<script src="../bower_components/jquery/dist/jquery.js"></script>
 	<script src="../bower_components/jquery/jquery.xdomainajax.js"></script>
@@ -118,6 +131,12 @@
 	<script src="js/models/SpeciesFilter.js"></script>
 	<script src="js/models/lakeScraper.js"></script>
 	<script src="js/offcanvas.js"></script>
+	<script src="js/modelviews/FiltersVM.js"></script>
+	<script src="js/modelviews/LakeListVM.js"></script>
+	<script src="js/modelviews/MapVM.js"></script>
+	<script src="js/modelviews/LakeInfoVM.js"></script>
+	<script src="js/modelviews/FlickrVM.js"></script>
+	<script src="js/modelviews/PanoramioVM.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

@@ -5,7 +5,7 @@
 	border-color: red;
 }
 */
-.mapView {
+#mapView {
 	width: 100vw;
 	height: calc(100vh - 84px);
 	display: block;
@@ -28,7 +28,7 @@
     background-color: #ffc;
 }
 
-.fishmap-header {
+#fishmap-header {
   padding-bottom: 5px;
   margin: 5px 0 2px;
   border-bottom: 2px solid #eee;
@@ -38,6 +38,24 @@
 	display: inline-block;
 	vertical-align: middle;
 	float: none;
+}
+
+#speciesList {
+  padding-bottom: 5px;
+  margin: 5px 0 2px;
+  border-bottom: 2px solid #eee;
+}
+
+#flickrPics {
+  padding-bottom: 5px;
+  margin: 5px 0 2px;
+  border-bottom: 2px solid #eee;
+}
+
+#panoramioPics {
+  padding-bottom: 5px;
+  margin: 5px 0 2px;
+  border-bottom: 2px solid #eee;
 }
 
 html, body {
