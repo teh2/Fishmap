@@ -8,6 +8,9 @@ add rivers "area"
 
 ToDos:
 ------
+finish the code cleanup - decouple the various modelviews.
+Aren't they supposed to be called ViewModels?
+
 Learn more about Bower - how to keep components up to date
 Learn more about Bower - how to use src/dev/dist
 search function - real time, by name
@@ -53,6 +56,10 @@ filter function - other criteria?
 add API calls - pics, pintrest, flickr, picasa, panoramia, instagram
 Does the trib have an API?
 Maybe the Herald?
+Separate the filters model from the filtersVM...
+then get the filters model from the viewModel for use in the LakeListVM...
+And again in the FiltersVM...
+
 
 
 Development log:

@@ -38,7 +38,7 @@
 		<ul class="dropdown-menu" role="menu" aria-labelledby="filtersMenuButton">
           <li class="dropdown-header">Areas</li>
           <li class="divider"></li>
-		  <div data-bind="with: areaFilters">
+		  <div data-bind="with: filters.areaFilters">
 		  <li><input type="checkbox" role="menuitem" data-bind="checked: NW">&nbsp;NorthWest</input></li>
           <li><input type="checkbox" role="menuitem" data-bind="checked: NE">&nbsp;NorthEast</input></li>
           <li><input type="checkbox" role="menuitem" data-bind="checked: WC">&nbsp;WestCentral</input></li>
@@ -50,7 +50,7 @@
           <li role="presentation" class="divider"></li>
           <!--li role="presentation"><a role="menuitem" tabindex="-1" href="#">Bluegill</a></li>
           <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Crappie</a></li-->
-		<div class="speciesFilters" data-bind="foreach: sortedSpeciesFilters">
+		<div class="speciesFilters" data-bind="foreach: filters.sortedSpeciesFilters">
 			<li><input type="checkbox" role="menuitem" data-bind="checked: $data.value"></input>&nbsp;<span data-bind="text: $data.displayName"></span></li>
 		</div>
         </ul>
@@ -129,6 +129,7 @@
 	<script src="js/models/lakeData.js"></script>
 	<script src="js/models/lakeInfo.js"></script>
 	<script src="js/models/SpeciesFilter.js"></script>
+	<script src="js/models/Filters.js"></script>
 	<script src="js/models/lakeScraper.js"></script>
 	<script src="js/offcanvas.js"></script>
 	<script src="js/modelviews/FiltersVM.js"></script>

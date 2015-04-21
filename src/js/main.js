@@ -2,6 +2,7 @@
 var ViewModel = function() {
 	var self = this;
 	this.lakes = ko.observableArray();
+	this.filters = new Filters();
 
 //This code is part of the lakeScraper functionality...
 //	this.lakeScraper = new LakeScraper(self.lakes);
@@ -18,6 +19,20 @@ console.log("setCurrentLake:"+theLake.name());
 	
 	this.getCurrentLake = function() {
 		return lakeInfoVM.currentLake();
+	};
+
+	this.getFilteredLakes = function() {
+console.log("viewModel.getFilteredLakes()");
+		return lakeListVM.filteredLakes();
+	};
+
+	this.setLocation = function(lat, lon) {
+		flickrVM.setLocation(lat, lon);
+		panoramioVM.setLocation(lat, lon);
+	};
+
+	this.buildMapMarker = function(aLake) {
+		mapVM.buildMarker(aLake);
 	};
 
 	//This code is part of the lakeScraper functionality...
@@ -51,10 +66,10 @@ $(document).ready(function() {
 	viewModel = new ViewModel();
 	ko.applyBindings(viewModel, $('#fishmap-header')[0]);
 
-	filtersVM = new FiltersVM();
+	filtersVM = new FiltersVM(viewModel.filters);
 	ko.applyBindings(filtersVM, $('#filtersMenu')[0]);
 
-	lakeListVM = new LakeListVM();
+	lakeListVM = new LakeListVM(viewModel.filters);
 	ko.applyBindings(lakeListVM, $('#lakeList')[0]);
 
 	mapVM = new MapVM();
