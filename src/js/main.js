@@ -12,7 +12,7 @@ var ViewModel = function() {
 
 
 	this.setCurrentLake = function(theLake) {
-console.log("setCurrentLake:"+theLake.name());
+// console.log("setCurrentLake:"+theLake.name());
 		lakeInfoVM.currentLake(theLake);
 		mapVM.displayInfo();
 	};
@@ -22,7 +22,7 @@ console.log("setCurrentLake:"+theLake.name());
 	};
 
 	this.getFilteredLakes = function() {
-console.log("viewModel.getFilteredLakes()");
+// console.log("viewModel.getFilteredLakes()");
 		return lakeListVM.filteredLakes();
 	};
 
@@ -67,7 +67,8 @@ $(document).ready(function() {
 	ko.applyBindings(viewModel, $('#fishmap-header')[0]);
 
 	filtersVM = new FiltersVM(viewModel.filters);
-	ko.applyBindings(filtersVM, $('#filtersMenu')[0]);
+//	ko.applyBindings(filtersVM, $('#filtersMenu')[0]);
+	ko.applyBindings(filtersVM, $('#filtering')[0]);
 
 	lakeListVM = new LakeListVM(viewModel.filters);
 	ko.applyBindings(lakeListVM, $('#lakeList')[0]);

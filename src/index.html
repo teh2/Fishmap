@@ -16,8 +16,8 @@
 	<div class="container-fluid">
 	<div id ="fishmap-header" class="row">
     <header> <!--  class="fishmap-header" navbar navbar-default navbar-fixed-top hidden-md hidden-lg -->
-      <button type="button" class="col-xs-1 btn vcenter hidden-sm hidden-md hidden-lg" data-toggle="offcanvas"> <!--   data-target=".navmenu" -->Lakes</button>
-	  <h1 class="col-xs-10 col-sm-12 text-center vcenter">FishMap</h1>
+      <button type="button" class="col-xs-3 btn vcenter hidden-sm hidden-md hidden-lg" data-toggle="offcanvas"> <!--   data-target=".navmenu" -->Lakes</button>
+	  <h1 class="col-xs-8 col-sm-12 text-center vcenter">FishMap</h1>
     </header>
 	</div>
 
@@ -32,12 +32,18 @@
 		<li>One</li>
 		<li>Two</li>
       </ul-->
-	  <div>search bar</div>
-	<div class="dropdown" id="filtersMenu">
+	  <div id="filtering">
+	  <span id="searchBar">search bar
+	  <span><input type="text" data-bind="textInput: filters.searchStr"/></span>
+	  </span>
+	<span class="dropdown" id="filtersMenu">
 		<button class="btn btn-default dropdown-toggle" type="button" id="filtersMenuButton" data-toggle="dropdown">filters<span class="caret"></span></button>
 		<ul class="dropdown-menu" role="menu" aria-labelledby="filtersMenuButton">
-          <li class="dropdown-header">Areas</li>
+          <li class="dropdown-header">Search</li>
+		  <!--li class="search-input"><input type="text" data-bind="textInput: filters.searchStr"/></li-->
           <li class="divider"></li>
+          <li class="dropdown-header">Areas</li>
+          <!--li class="divider"></li-->
 		  <div data-bind="with: filters.areaFilters">
 		  <li><input type="checkbox" role="menuitem" data-bind="checked: NW">&nbsp;NorthWest</input></li>
           <li><input type="checkbox" role="menuitem" data-bind="checked: NE">&nbsp;NorthEast</input></li>
@@ -47,13 +53,14 @@
 		  </div>
           <li role="presentation" class="divider"></li>
           <li role="presentation" class="dropdown-header">Species</li>
-          <li role="presentation" class="divider"></li>
+          <!--li role="presentation" class="divider"></li-->
           <!--li role="presentation"><a role="menuitem" tabindex="-1" href="#">Bluegill</a></li>
           <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Crappie</a></li-->
 		<div class="speciesFilters" data-bind="foreach: filters.sortedSpeciesFilters">
 			<li><input type="checkbox" role="menuitem" data-bind="checked: $data.value"></input>&nbsp;<span data-bind="text: $data.displayName"></span></li>
 		</div>
         </ul>
+	</span>
 	</div>
 		<div id="lakeList">
 			<ul class="nav lakes-scrollable listView" data-bind="foreach: filteredLakes">

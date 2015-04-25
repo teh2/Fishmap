@@ -10,7 +10,9 @@ var Filters = function() {
 	});
 
 	this.speciesFilters = ko.observableArray();
-	
+
+	this.searchStr = ko.observable("");
+
 	this.sortedSpeciesFilters = ko.computed(function() {
 		var sorted = self.speciesFilters().sort(function(a,b) {
 			var aVal = a().name().valueOf();
