@@ -44,9 +44,14 @@ var ViewModel = function() {
 
 
 	this.init = function() {
+console.log("viewmodel.init()");
 		mapVM.wireUpMapMarkers();
 		lakeListVM.loadLakeData();
 		filtersVM.setupFiltersMenu();
+		//Set splashPage to display:none
+		$('#splashPage').hide();
+		//Set contentPage to display:block
+		$('#contentPage').show();
 	};
 
 

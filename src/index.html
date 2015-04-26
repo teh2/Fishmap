@@ -1,93 +1,94 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
+<head>
+	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-    <meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+	<meta name="description" content="">
 
-    <title>FishMap</title>
+	<title>FishMap</title>
 
 	<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/main.css">
 	<link rel="stylesheet" href="styles/offcanvas.css">
-  </head>
-  <body>
-	<div class="container-fluid">
-	<div id ="fishmap-header" class="row">
-    <header> <!--  class="fishmap-header" navbar navbar-default navbar-fixed-top hidden-md hidden-lg -->
-      <button type="button" class="col-xs-3 btn vcenter hidden-sm hidden-md hidden-lg" data-toggle="offcanvas"> <!--   data-target=".navmenu" -->Lakes</button>
-	  <h1 class="col-xs-8 col-sm-12 text-center vcenter">FishMap</h1>
-    </header>
-	</div>
+</head>
+<body>
+	<!-- Splash Page -->
+	<div id="splashPage">
+		<div id ="splash-header" class="row">
+			<header>
+				<h1 class="col-xs-12 text-center vcenter">FishMap!</h1>
+			</header>
+		</div><!--Header row-->
+		<script src="js/models/SplashThumbs.js"></script>
+		<script>
+			SplashThumbs.forEach(function(info) {
+			var str = '<a href="' + info.linkBack + '" target="_blank">' +
+					'<img src="' + info.thumbUrl +
+					'" alt="missing thumb"></img></a>';
+				document.write(str);
+			});
+		</script>
+		<p>This product uses the Google Maps API but is not endorsed or certified by Google.
+		<p>This product uses the Flickr API but is not endorsed or certified by Flickr.
+		<p>This product uses the Panoramio API but is not endorsed or certified by Panoramio.
+		<p>All images are owned by the original photographer. For information regarding the original image, please click on the thumbnail to be taken to the original.
+	</div><!-- Splash Page -->
+	<!-- Content Page -->
+	<div id="contentPage" style="display: none" class="container-fluid">
+		<!--Header row-->
+		<div id ="fishmap-header" class="row">
+			<header>
+				<button type="button" class="col-xs-3 btn vcenter hidden-sm hidden-md hidden-lg" data-toggle="offcanvas">Lakes</button>
+				<h1 class="col-xs-8 col-sm-12 text-center vcenter">FishMap</h1>
+			</header>
+		</div><!--Header row-->
 
-  <div class="row row-offcanvas row-offcanvas-left">
-    <div class="col-xs-6 col-sm-3 sidebar-offcanvas">
-      <!--a class="navmenu-brand visible-md visible-lg" href="#">FishMap</a-->
-	  <!--div class="list-group">
-		<a href="#" class="list-group-item">one</a>
-		<a href="#" class="list-group-item">two</a>
-		</div-->
-      <!--ul class="listView">
-		<li>One</li>
-		<li>Two</li>
-      </ul-->
-	  <div id="filtering">
-	  <span id="searchBar">search bar
-	  <span><input type="text" data-bind="textInput: filters.searchStr"/></span>
-	  </span>
-	<span class="dropdown" id="filtersMenu">
-		<button class="btn btn-default dropdown-toggle" type="button" id="filtersMenuButton" data-toggle="dropdown">filters<span class="caret"></span></button>
-		<ul class="dropdown-menu" role="menu" aria-labelledby="filtersMenuButton">
-          <li class="dropdown-header">Search</li>
-		  <!--li class="search-input"><input type="text" data-bind="textInput: filters.searchStr"/></li-->
-          <li class="divider"></li>
-          <li class="dropdown-header">Areas</li>
-          <!--li class="divider"></li-->
-		  <div data-bind="with: filters.areaFilters">
-		  <li><input type="checkbox" role="menuitem" data-bind="checked: NW">&nbsp;NorthWest</input></li>
-          <li><input type="checkbox" role="menuitem" data-bind="checked: NE">&nbsp;NorthEast</input></li>
-          <li><input type="checkbox" role="menuitem" data-bind="checked: WC">&nbsp;WestCentral</input></li>
-          <li><input type="checkbox" role="menuitem" data-bind="checked: EC">&nbsp;EastCentral</input></li>
-          <li><input type="checkbox" role="menuitem" data-bind="checked: S">&nbsp;South</input></li>
-		  </div>
-          <li role="presentation" class="divider"></li>
-          <li role="presentation" class="dropdown-header">Species</li>
-          <!--li role="presentation" class="divider"></li-->
-          <!--li role="presentation"><a role="menuitem" tabindex="-1" href="#">Bluegill</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Crappie</a></li-->
-		<div class="speciesFilters" data-bind="foreach: filters.sortedSpeciesFilters">
-			<li><input type="checkbox" role="menuitem" data-bind="checked: $data.value"></input>&nbsp;<span data-bind="text: $data.displayName"></span></li>
-		</div>
-        </ul>
-	</span>
-	</div>
-		<div id="lakeList">
-			<ul class="nav lakes-scrollable listView" data-bind="foreach: filteredLakes">
-				<li class="lakes-item" data-bind="text: displayName, click: $parent.setCurrentLake"></li>
-			</ul>
-		</div>
-    </div>
-	<div class="col-xs-12 col-sm-9">
-		<div id="mapView"> <!--  style="width: 500px; height: 500px; display: block" -->
-			Map
-		</div>
-		<!--div class="statusBar">
-			<h2 id="statusText">Status Bar goes <span data-bind="text: currentLake() && currentLake().name"</span></h2><
-		</div-->
-		<!--div class="detailsView" data-bind="with: currentLake">
-			<h2>Details view goes here</h2>
-			<p>Name:<span data-bind="text: name"></span>
-			<p>Href:<span data-bind="text: href"></span>
-			<p>County:<span data-bind="text: county"></span>
-			<p>Place:<span data-bind="text: place"></span>
-			<p>Species:<ul data-bind="foreach: species">
-				<li data-bind="text: $data"></li>
-			</ul>
-		</div-->
-	</div>
-	</div>
-	</div>
+		<!--content row-->
+		<div class="row row-offcanvas row-offcanvas-left">
+			<div class="col-xs-6 col-sm-3 sidebar-offcanvas">
+				<div id="filtering">
+					<!-- Search bar -->
+					<span id="searchBar">search bar
+						<span><input type="text" data-bind="textInput: filters.searchStr"/></span>
+					</span>
+					<!-- Filters drop down menu -->
+					<span class="dropdown" id="filtersMenu">
+						<button class="btn btn-default dropdown-toggle" type="button" id="filtersMenuButton" data-toggle="dropdown">filters<span class="caret"></span></button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="filtersMenuButton">
+							<!--li class="dropdown-header">Search</li>
+							<li class="divider"></li-->
+							<li class="dropdown-header">Areas</li>
+							<div data-bind="with: filters.areaFilters">
+								<li><input type="checkbox" role="menuitem" data-bind="checked: NW">&nbsp;NorthWest</input></li>
+								<li><input type="checkbox" role="menuitem" data-bind="checked: NE">&nbsp;NorthEast</input></li>
+								<li><input type="checkbox" role="menuitem" data-bind="checked: WC">&nbsp;WestCentral</input></li>
+								<li><input type="checkbox" role="menuitem" data-bind="checked: EC">&nbsp;EastCentral</input></li>
+								<li><input type="checkbox" role="menuitem" data-bind="checked: S">&nbsp;South</input></li>
+							</div>
+							<li role="presentation" class="divider"></li>
+							<li role="presentation" class="dropdown-header">Species</li>
+							<div class="speciesFilters" data-bind="foreach: filters.sortedSpeciesFilters">
+								<li><input type="checkbox" role="menuitem" data-bind="checked: $data.value"></input>&nbsp;<span data-bind="text: $data.displayName"></span></li>
+							</div>
+						</ul>
+					</span>
+				</div>
+				<!-- Lake List -->
+				<div id="lakeList">
+					<ul class="nav lakes-scrollable listView" data-bind="foreach: filteredLakes">
+						<li class="lakes-item" data-bind="text: displayName, click: $parent.setCurrentLake"></li>
+					</ul>
+				</div>
+			</div>
+			<!-- Map -->
+			<div class="col-xs-12 col-sm-9">
+				<div id="mapView">
+					Map
+				</div>
+			</div>
+		</div><!--Content row-->
+	</div><!-- container-fluid-->
 
 	<!-- This next span is used as a hidden staging area for the infoWindow text
 		without putting it in the actual html, it won't get parsed by knockout
@@ -102,18 +103,16 @@
 				</ul>
 			</div>
 		</div>
-			<div id="flickrPics">
-				<div data-bind="foreach: flickrThumbs">
-					<a data-bind="attr: {href: linkBack}" target="_blank">
-						<img data-bind="attr: {src: pic, height: height, width: width}" alt="missing thumb"></img>
-					</a>
-				</div>
-				<div data-bind="text: flickrAttrib"></div>
+		<div id="flickrPics">
+			<div data-bind="foreach: flickrThumbs">
+				<a data-bind="attr: {href: linkBack}" target="_blank">
+					<img data-bind="attr: {src: pic, height: height, width: width}" alt="missing thumb"></img>
+				</a>
 			</div>
-			<div id="panoramioPics">
-			</div>
-			<!--div id="panoramioAttr" data-bind="text: panoramioAttrib">
-			</div-->
+			<div data-bind="text: flickrAttrib"></div>
+		</div>
+		<div id="panoramioPics">
+		</div>
 	</span>
 	<!--button>Dump</button-->
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

@@ -1,34 +1,32 @@
 Current:
 --------
-in the lake list, turn grey - no species, or no latlon
-marker - if no species, turn marker grey
-add rivers "area"
+finish the code cleanup - decouple the various modelviews.
+Aren't they supposed to be called ViewModels?
+
 
 
 
 ToDos:
 ------
-finish the code cleanup - decouple the various modelviews.
-Aren't they supposed to be called ViewModels?
 
 Learn more about Bower - how to keep components up to date
 Learn more about Bower - how to use src/dev/dist
 search function - real time, by name
 gulp - build script
-style up the page
-make it responsive
-test it in a phone browser
 Add sort criteria to species dropdown (alpha, frequency, threshold)
 add API calls - fishing reports
 add API calls - wikipedia articles - link from species name in popup window?
+	In the infoWindow, make each species name a link to the wikipedia article on that species. Or to a corresponding page at iFishIllinois.
 add lat/lon (to lakes with no species)
 add "Unknown" species to lakes with no species
 local storage
 	http://stackoverflow.com/questions/11601365/how-can-i-implement-mvvm-with-offline-storage-and-knockout-js
 	https://github.com/jimrhoskins/knockout.localStorage
-In the infoWindow, make each species name a link to the wikipedia article on that species. Or to a corresponding page at iFishIllinois.
-attributions:
-	"This product uses the Flickr API but is not endorsed or certified by Flickr."
+in the lake list, turn grey - no species, or no latlon
+marker - if no species, turn marker grey
+add rivers "area"
+Add a "Center map at my current location button" if the user's current location is known.
+
 something else
 
 
@@ -56,9 +54,15 @@ filter function - other criteria?
 add API calls - pics, pintrest, flickr, picasa, panoramia, instagram
 Does the trib have an API?
 Maybe the Herald?
+style up the page
+make it responsive
+test it in a phone browser
 Separate the filters model from the filtersVM...
 then get the filters model from the viewModel for use in the LakeListVM...
 And again in the FiltersVM...
+attributions:
+	"This product uses the Flickr API but is not endorsed or certified by Flickr."
+splash page
 
 
 
