@@ -50,4 +50,5 @@ var Filters = function() {
 		});
 	};
 
+	this.unknownSpecies = ko.observable(false);
 };

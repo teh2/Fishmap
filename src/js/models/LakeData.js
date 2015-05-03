@@ -44,7 +44,7 @@ var LakeData = [
 		"href":"/profiles/display_lake.php?waternum=00085",
 		"county":"Cook",
 		"species":[],
-		"latlon":"",
+		"latlon":"42.008387,-87.865928",
 		"area":"NE"
 	},
 	{

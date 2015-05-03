@@ -28,6 +28,10 @@
     background-color: #ffc;
 }
 
+.lakes-item.selected {
+    background-color: #0c0;
+}
+
 #fishmap-header {
   padding-bottom: 5px;
   margin: 5px 0 2px;
@@ -56,6 +60,20 @@
   padding-bottom: 5px;
   margin: 5px 0 2px;
   border-bottom: 2px solid #eee;
+}
+
+.splashThumb {
+	margin: 10px;
+	padding: 5px;
+	border: 2px solid;
+}
+
+#attributions {
+	font-size: 8px;
+}
+
+#instructions {
+	font-size: 12px;
 }
 
 html, body {

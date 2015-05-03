@@ -16,7 +16,8 @@ var LakeInfo = function(nm, ref) {
 		var nums = self.latlon().split(",");
 		return nums[1];
 	});
-
+	this.selected = ko.observable(false);
+	
 	this.area = ko.observable();
 	this.species = ko.observableArray();
 	this.speciesCount = ko.computed(function() {

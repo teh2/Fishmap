@@ -13,6 +13,11 @@ var ViewModel = function() {
 
 	this.setCurrentLake = function(theLake) {
 // console.log("setCurrentLake:"+theLake.name());
+		var currLake = lakeInfoVM.currentLake();
+		if (typeof currLake !== "undefined") {
+			currLake.selected(false);
+		}
+		theLake.selected(true);
 		lakeInfoVM.currentLake(theLake);
 		mapVM.displayInfo();
 	};
