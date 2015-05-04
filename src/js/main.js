@@ -8,9 +8,6 @@ var ViewModel = function() {
 //	this.lakeScraper = new LakeScraper(self.lakes);
 
 
-//	this.currentLake = ko.observable(self.lakes()[0]);
-
-
 	this.setCurrentLake = function(theLake) {
 // console.log("setCurrentLake:"+theLake.name());
 		var currLake = lakeInfoVM.currentLake();
@@ -19,7 +16,7 @@ var ViewModel = function() {
 		}
 		theLake.selected(true);
 		lakeInfoVM.currentLake(theLake);
-		mapVM.displayInfo();
+		mapVM.setupInfoWindow();
 	};
 	
 	this.getCurrentLake = function() {
@@ -27,7 +24,6 @@ var ViewModel = function() {
 	};
 
 	this.getFilteredLakes = function() {
-// console.log("viewModel.getFilteredLakes()");
 		return lakeListVM.filteredLakes();
 	};
 

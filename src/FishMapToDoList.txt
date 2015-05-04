@@ -1,32 +1,26 @@
 Current:
 --------
-finish the code cleanup - decouple the various modelviews.
-Aren't they supposed to be called ViewModels?
-
-
-ToDos:
-------
-Check blocked API
-jquery ajax .fail
 add API calls - wikipedia articles - link from species name in popup window?
 	In the infoWindow, make each species name a link to the wikipedia article on that species. Or to a corresponding page at iFishIllinois.
 gulp - build script
 code formatting
 comments
 README file - how to run it, references, purpose, etc.
+add lat/lon (to lakes with no species)
 
+
+ToDos:
+------
 Learn more about Bower - how to keep components up to date
 Learn more about Bower - how to use src/dev/dist
 search function - real time, by name
 Add sort criteria to species dropdown (alpha, frequency, threshold)
 add API calls - fishing reports
-add lat/lon (to lakes with no species)
-add "Unknown" species to lakes with no species
 local storage
 	http://stackoverflow.com/questions/11601365/how-can-i-implement-mvvm-with-offline-storage-and-knockout-js
 	https://github.com/jimrhoskins/knockout.localStorage
 add rivers "area"
-Add a "Center map at my current location button" if the user's current location is known.
+Add a "Center map at my current location" button if the user's current location is known.
 
 
 Finished:
@@ -69,6 +63,11 @@ in the lake list, turn grey - no species, or no latlon
 marker - if no species, turn marker grey
 	(used a different icon with a question mark instead)
 search box - keyboard shortcuts, autocomplete, search multiple fields
+fixed:Flickr photos show up one click behind the infowindow...
+Decided to handle this differently: add "Unknown" species to lakes with no species
+Error handling: Check blocked API --and-- jquery ajax .fail
+finish the code cleanup - decouple the various viewmodels.
+Aren't they supposed to be called ViewModels?
 
 
 Development log:
