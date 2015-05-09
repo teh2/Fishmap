@@ -3,10 +3,7 @@ Current:
 add API calls - wikipedia articles - link from species name in popup window?
 	In the infoWindow, make each species name a link to the wikipedia article on that species. Or to a corresponding page at iFishIllinois.
 gulp - build script
-code formatting
-comments
 README file - how to run it, references, purpose, etc.
-add lat/lon (to lakes with no species)
 
 
 ToDos:
@@ -16,11 +13,14 @@ Learn more about Bower - how to use src/dev/dist
 search function - real time, by name
 Add sort criteria to species dropdown (alpha, frequency, threshold)
 add API calls - fishing reports
+http://www.prairiestateoutdoors.com/
+http://www.prairiestateoutdoors.com/pso/article/central_illinois_lake_status_reports
 local storage
 	http://stackoverflow.com/questions/11601365/how-can-i-implement-mvvm-with-offline-storage-and-knockout-js
 	https://github.com/jimrhoskins/knockout.localStorage
 add rivers "area"
 Add a "Center map at my current location" button if the user's current location is known.
+Add "Settings" with a way to get back to the splash page.
 
 
 Finished:
@@ -68,6 +68,9 @@ Decided to handle this differently: add "Unknown" species to lakes with no speci
 Error handling: Check blocked API --and-- jquery ajax .fail
 finish the code cleanup - decouple the various viewmodels.
 Aren't they supposed to be called ViewModels?
+code formatting
+comments
+add lat/lon (to lakes with no species) - everything except the rivers.
 
 
 Development log:

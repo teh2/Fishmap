@@ -1,4 +1,4 @@
-/*
+/* Used for testing and blocking out the page...
 * {
 	border: 1px;
 	border-style: solid;
@@ -14,7 +14,7 @@
 .lakes-scrollable {
 	padding-left: 0px;
 	overflow-y: scroll;
-	max-height: calc(100vh - 140px);
+	max-height: calc(100vh - 164px);
 }
 .lakes-item {
   position: relative;
@@ -30,6 +30,12 @@
 
 .lakes-item.selected {
     background-color: #0c0;
+}
+
+.scrollable-menu {
+	height: auto;
+	max-height: calc(100vh - 164px);;
+	overflow-x:hidden;
 }
 
 #fishmap-header {
@@ -79,51 +85,9 @@
 html, body {
   height: 100%;
 }
-/*
-body {
-  padding: 50px 0 0 0;
-}
-*/
-/*
-.navmenu {
-  padding-top: 50px;
-}
 
-.navbar {
-  display: block;
-  text-align: center;
-}
-.navbar-brand {
-  display: inline-block;
-  float: none;
-}
-.navbar-toggle {
-  position: absolute;
-  float: left;
-  margin-left: 15px;
-}
-*/
 .container {
   max-width: 100%;
   max-height: 100vh;
 }
 
-/*
-@media (min-width: 1px) {
-  .navbar-toggle {
-    display: block !important;
-  }
-}
-
-@media (min-width: 992px) {
-  body {
-    padding: 0 0 0 300px;
-  }
-  .navmenu {
-    padding-top: 0;
-  }
-  .navbar {
-    display: none !important; /* IE8 fix
-  }
-}
-*/

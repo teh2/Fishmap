@@ -65,7 +65,7 @@
 					<!-- Filters drop down menu -->
 					<span class="dropdown" id="filtersMenu">
 						<button class="btn btn-default dropdown-toggle" type="button" id="filtersMenuButton" data-toggle="dropdown">filters<span class="caret"></span></button>
-						<ul class="dropdown-menu" role="menu" aria-labelledby="filtersMenuButton">
+						<ul class="dropdown-menu scrollable-menu" role="menu" aria-labelledby="filtersMenuButton">
 							<!--li class="dropdown-header">Search</li>
 							<li class="divider"></li-->
 							<li class="dropdown-header">Areas</li>
@@ -84,7 +84,7 @@
 							<li role="presentation" class="divider"></li>
 							<li class="dropdown-header">Special Filters</li>
 							<li><input type="checkbox" role="menuitem" data-bind="checked: filters.unknownSpecies">&nbsp;Include lakes with unknown species</input></li>
-							<li role="presentation" class="divider"></li>
+							<!--li role="presentation" class="divider"></li-->
 						</ul>
 					</span>
 				</div>
@@ -104,8 +104,8 @@
 		</div><!--Content row-->
 	</div><!-- container-fluid-->
 
-	<!-- This next span is used as a hidden staging area for the infoWindow text
-		without putting it in the actual html, it won't get parsed by knockout
+	<!-- This next span is used as a hidden staging area for the infoWindow text.
+		Without putting it in the actual html, it won't get parsed by knockout
 		and our bindings won't be translated. -->
 	<span id ="lakeDetails" style="display: none">
 		<div id = "lakeInfo" data-bind="with: currentLake">
