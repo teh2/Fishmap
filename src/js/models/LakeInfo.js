@@ -53,4 +53,4 @@ var LakeInfo = function(nm, ref) {
 	this.iFishLink = ko.computed(function() {
 		return "<a href='http://www.ifishillinois.org"+self.href()+"'>lake report at ifishillinois.org</a>";
 	});
-}
+};

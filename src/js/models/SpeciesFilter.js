@@ -13,4 +13,4 @@ var SpeciesFilter = function(nm, val) {
 	this.displayName = ko.computed(function() {
 		return self.name() + " (" + self.count() + ")";
 	});
-}
+};

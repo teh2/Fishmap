@@ -67,7 +67,7 @@ var LakeScraper = function(theLakes) {
 					console.log(stat+":"+thrown);
 				}
 			});
-		};
+		}
 	};
 
 	//We got back a specific lake page. Tear it apart and collect the list of species identified as resident... This is done in stages, just to make it easy. Basically, we pull off the beginning of the returned page, and look only at the part of the page that lists species.
@@ -88,7 +88,7 @@ console.log("scraping species for " + this.name());
 				thisLake.county(theCounty);
 				resp = resp.substr(countyEnd);
 			}
-		};
+		}
 		//Now, we want to know if they've listed fish species for us...
 		var beginLoc = resp.search('<div id="species">');
 		if (-1 < beginLoc) {

@@ -2,7 +2,6 @@ Current:
 --------
 add API calls - wikipedia articles - link from species name in popup window?
 	In the infoWindow, make each species name a link to the wikipedia article on that species. Or to a corresponding page at iFishIllinois.
-gulp - build script
 README file - how to run it, references, purpose, etc.
 
 
@@ -71,6 +70,7 @@ Aren't they supposed to be called ViewModels?
 code formatting
 comments
 add lat/lon (to lakes with no species) - everything except the rivers.
+gulp - build script
 
 
 Development log:

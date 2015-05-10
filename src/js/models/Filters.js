@@ -54,11 +54,11 @@ var Filters = function() {
 			if (sFilter().name().valueOf() == name.valueOf()) {
 				foundIt = true;
 				sFilter().count(sFilter().count() + 1);
-			};
+			}
 		});
 		if (!foundIt) {
 			self.speciesFilters.push(ko.observable(new SpeciesFilter(name, true)));
-		};
+		}
 	};
 
 	/**
@@ -68,7 +68,7 @@ var Filters = function() {
 		self.speciesFilters().forEach(function(sFilter) {
 			if (sFilter().count() < max) {
 				sFilter().value(false);
-			};
+			}
 		});
 	};
 
