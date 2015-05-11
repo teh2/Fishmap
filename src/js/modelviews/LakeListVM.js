@@ -73,15 +73,18 @@ var LakeListVM = function(inFilters) {
 						if (self.matchSearchBoxToLakeName(aLake)) {
 // console.log("matched chosen species and search box");
 							filtered[filtered.length] = aLake;
+							return;
 						}
 					}
-					else if (self.matchSearchBoxToSpeciesNames(aLake)) {
+					if (self.matchSearchBoxToSpeciesNames(aLake)) {
 // console.log("matched search box to species name");
 						filtered[filtered.length] = aLake;
+						return;
 					}
-					else if (self.noSpecies(aLake)) {
+					if (self.noSpecies(aLake)) {
 // console.log("matched no species");
 						filtered[filtered.length] = aLake;
+						return;
 					}
 				}
 			}

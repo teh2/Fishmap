@@ -3,6 +3,14 @@ Current:
 add API calls - wikipedia articles - link from species name in popup window?
 	In the infoWindow, make each species name a link to the wikipedia article on that species. Or to a corresponding page at iFishIllinois.
 README file - how to run it, references, purpose, etc.
+Check it all in, push it to github.
+Last, and certainly not least, submit it to uDacity.
+
+
+Bugs:
+-----
+ifishillinois links need to open a new page so you don't lose your filters...
+search bar is not working on species names...
 
 
 ToDos:
@@ -93,4 +101,4 @@ Notes on map markers:
 	Currently, viewModel.lakes is observable directly by the binding in the html.
 	Is there a way to compute the observable? Or something like that?
 	keep it simple: use two arrays, one of all the lakes, the other of the visible lakes based on the filters. When the filters change, use removeAll, and then push the visible ones back into the array. ANd look at setting the rateLimit on the observableArray so it doesn't repaint on every push.
-
+Log died when the todo/finished lists got rolling...
