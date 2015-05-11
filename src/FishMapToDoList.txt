@@ -10,7 +10,7 @@ Last, and certainly not least, submit it to uDacity.
 Bugs:
 -----
 ifishillinois links need to open a new page so you don't lose your filters...
-search bar is not working on species names...
+
 
 
 ToDos:
@@ -79,7 +79,7 @@ code formatting
 comments
 add lat/lon (to lakes with no species) - everything except the rivers.
 gulp - build script
-
+search bar is not working on species names...
 
 Development log:
 ----------------
