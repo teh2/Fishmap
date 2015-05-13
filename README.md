@@ -6,7 +6,7 @@ Fishmap is a class project for the uDacity FrontEnd NanoDegree. In short, it is 
 #Quick Start
 
 If you just want to see it run, you can check it out at:
-https://teh2.githumb.io/Fishmap/index.html
+http://teh2.github.io/Fishmap/index.html
 
 If you want to make it run yourself, you will need to:
 * grab the code from this github repo (https://github.com/teh2/Fishmap).

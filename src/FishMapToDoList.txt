@@ -1,6 +1,5 @@
 Current:
 --------
-Migrate the "build" code over to my github.io site.
 Last, and certainly not least, submit it to uDacity.
 
 
@@ -83,6 +82,7 @@ README file - how to run it, references, purpose, etc.
 Check it all in, push it to github.
 Problem: the Bower components are NOT migrated into the build folder during the gulp build. The app's not going to work when the build is copied to a new location.
 Fix: use a CDN (cdnjs.com)
+Migrate the "build" code over to my github.io site.
 
 
 Development log:
