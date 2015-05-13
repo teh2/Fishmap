@@ -81,6 +81,8 @@ gulp - build script
 search bar is not working on species names...
 README file - how to run it, references, purpose, etc.
 Check it all in, push it to github.
+Problem: the Bower components are NOT migrated into the build folder during the gulp build. The app's not going to work when the build is copied to a new location.
+Fix: use a CDN (cdnjs.com)
 
 
 Development log:
