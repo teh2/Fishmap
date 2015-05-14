@@ -1,8 +1,6 @@
 Current:
 --------
-Fix image file names.
-Center on selected marker.
-Close sidebar after selecting a lake.
+Panoramio thumbs update bug - not showing the results of the request.
 Last, and certainly not least, submit it to uDacity.
 
 
@@ -86,6 +84,10 @@ Check it all in, push it to github.
 Problem: the Bower components are NOT migrated into the build folder during the gulp build. The app's not going to work when the build is copied to a new location.
 Fix: use a CDN (cdnjs.com)
 Migrate the "build" code over to my github.io site.
+Submitted to uDacity. Came back with three deficiencies.
+Fix image file names.
+Center on selected marker.
+Close sidebar after selecting a lake.
 
 
 Development log:

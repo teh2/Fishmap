@@ -82,7 +82,7 @@ var FlickrVM = function() {
 				//When we've got them all, stuff them in the KO object so they can be propagated out to the display.
 				self.flickrThumbs(thumbs);
 				//One last thing... We have to tell the Google Maps API that we want to see our popup window, with the pics in it...
-				mapVM.displayInfo();
+				//mapVM.displayInfo();
 			},
 			error: function(xhr, stat, thrown) {
 				//In reality, we want to swallow this error, and carry on

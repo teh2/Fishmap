@@ -43,6 +43,8 @@ var ViewModel = function() {
 	this.setLocation = function(lat, lon) {
 		flickrVM.setLocation(lat, lon);
 		panoramioVM.setLocation(lat, lon);
+		//One last thing... We have to tell the Google Maps API that we want to see our popup window, with the pics in it...
+		mapVM.displayInfo();
 	};
 
 	this.buildMapMarker = function(aLake) {
@@ -66,6 +68,7 @@ var ViewModel = function() {
 		mapVM.wireUpMapMarkers();
 		lakeListVM.loadLakeData();
 		filtersVM.setupFiltersMenu();
+		panoramioVM.init();
 		//When everything is ready, switch from the splash to the map:
 		$('#splashPage').hide();
 		$('#contentPage').show();

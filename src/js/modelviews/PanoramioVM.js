@@ -32,9 +32,9 @@ var PanoramioVM = function() {
 	this.numPanoramioThumbs = ko.observable(0);
 
 	/**
-	* panoramioThumbs manages the retrieval and display of thumbnails from Panoramio.
+	* initial setup of the Widget. Should run once at startup time.
 	**/
-	this.panoramioThumbs = function() {
+	this.init = function() {
 		//Where, geographically, are we looking for pics?
 		var pRequest = { 'rect':
 			{'sw': {'lat': self.lat() - 0.01, 'lng': self.lon() - 0.01},
@@ -56,6 +56,20 @@ var PanoramioVM = function() {
 			self.panoramioAttrib();
 		});
 		self.pWidget.setPosition(0);
+	};
+	
+	/**
+	* panoramioThumbs manages the retrieval and display of thumbnails from Panoramio.
+	**/
+	this.panoramioThumbs = function() {
+		//Where, geographically, are we looking for pics?
+		var pRequest = { 'rect':
+			{'sw': {'lat': self.lat() - 0.01, 'lng': self.lon() - 0.01},
+				'ne': {'lat': self.lat() - 0 + 0.01, 'lng': self.lon() - 0 + 0.01}}};
+		self.pWidget.setRequest(pRequest);
+		self.pWidget.setPosition(0);
+		//One last thing... We have to tell the Google Maps API that we want to see our popup window, with the pics in it...
+		//mapVM.displayInfo();
 	};
 
 	/**
