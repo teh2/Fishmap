@@ -1,5 +1,8 @@
 Current:
 --------
+Fix image file names.
+Center on selected marker.
+Close sidebar after selecting a lake.
 Last, and certainly not least, submit it to uDacity.
 
 

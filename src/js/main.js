@@ -25,6 +25,7 @@ var ViewModel = function() {
 		}
 		theLake.selected(true);
 		lakeInfoVM.currentLake(theLake);
+		$('.row-offcanvas').toggleClass('active', false);
 		mapVM.setupInfoWindow();
 	};
 

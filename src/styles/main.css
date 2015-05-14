@@ -5,8 +5,9 @@
 	border-color: red;
 }
 */
+
 #mapView {
-	width: 100vw;
+	/*width: 100vw;*/
 	height: calc(100vh - 84px);
 	display: block;
 }
@@ -14,7 +15,7 @@
 .lakes-scrollable {
 	padding-left: 0px;
 	overflow-y: scroll;
-	max-height: calc(100vh - 164px);
+	max-height: calc(100vh - 168px);
 }
 .lakes-item {
   position: relative;
@@ -84,6 +85,14 @@
 
 html, body {
   height: 100%;
+}
+
+.nopadding {
+  padding: 0px;
+}
+
+.smpadding {
+  padding: 2px;
 }
 
 .container {
