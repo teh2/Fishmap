@@ -35,8 +35,12 @@
 
 .scrollable-menu {
 	height: auto;
-	max-height: calc(100vh - 164px);;
+	max-height: calc(100vh - 164px);
 	overflow-x:hidden;
+}
+
+#searchInput {
+	width: 100%;
 }
 
 #fishmap-header {
